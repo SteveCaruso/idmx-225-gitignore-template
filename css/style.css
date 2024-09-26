@@ -1,0 +1,14 @@
+body {
+    color:  #FDE74C;
+    background-color: #5B7C99;
+    font-family: "Playfair Display", serif;
+
+}
+header, footer {
+    text-align: center;
+    font-size: 150%;
+   
+}
+#hero, #bio, #about-me, #favorite-music{
+    text-align: center;
+}
