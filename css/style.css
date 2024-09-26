@@ -1,0 +1,30 @@
+body{
+   background-color:lightpink;
+   font-family: Bitter, "Times New Roman", serif;
+}
+
+header{
+    text-align: center;
+    color: #e0779f;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Oswald, Impact, sans-serif; 
+    font-size: 300%;
+}
+#hero, footer {
+    text-align: center;
+    background-color: #e0779f;
+    color: white;
+    padding: 30px;
+    border: 10px outset #bf77e0;
+    border-radius: 40px;
+}
+#hero img {
+width: 300px; 
+}
+#bio, #me{
+    text-align: center;
+    color: white;
+    font-size:100%;
+
+}
