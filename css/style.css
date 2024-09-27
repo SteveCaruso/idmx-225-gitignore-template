@@ -9,6 +9,28 @@ header, footer {
     font-size: 150%;
    
 }
-#hero, #bio, #about-me, #favorite-music{
+#bio, #about-me, #favorite-music{
     text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#hero img {
+    width: 275px;
+}
+
+#hero, footer{
+    font-family: "Josefin Sans, sans-serif";
+    background-color:#FDE74C;
+    color: #5B7C99;
+    padding: 10px;  
+    border: 5px solid #E5E9EC;
+    width: 685px;
+    margin: 0 auto;
+    font-size: 24px;
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    list-style-position: inside;
 }
