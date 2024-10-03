@@ -1,0 +1,31 @@
+body {
+    font-family: Nunito;
+    background-color: #D3A1A1;
+    color: #363F41
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Poppins";
+    font-size: 35pt;
+}
+
+header {
+    text-align: center;
+}
+
+#hero, footer {
+    color: #B7D6DC;
+    border: 2px solid #413232;
+    background-color: #A56C6C;
+    text-align: center;
+    padding: 10px;
+}
+
+#hero img {
+    width: 300px;
+}
+
+#bio {
+    text-align: center;
+}
