@@ -8,11 +8,13 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family:"Poppins";
     text-align: center;
+    font-size: 30px;
+    margin-bottom: 0;
 }
 
-h1 {
+/*h1 {
     font-size: 40px;
-}
+}*/
 
 header {
     text-align: center;
@@ -48,7 +50,8 @@ header {
 /*Gallery Section*/
 
 #gallery {
-    border: 2px solid #363F41
+    border: 2px solid #363F41;
+    margin-bottom: 2rem;
 }
 
 #gallery img {
@@ -57,8 +60,38 @@ header {
 
 #gallery figure {
     color: black;
-    border: 2px solid #413232;
+    border: 2px solid #363F41;
     background-color: #A56C6C;
     text-align: center;
 
+}
+
+/*Article Section*/
+#lit {
+    border: 2px solid #363F41;
+    margin-bottom: 2rem;
+}
+
+#lit div {
+    padding: 2rem;
+    max-width: 40rem;
+    margin: auto;
+}
+
+#lit div p {
+    padding: 0;
+    margin-top: 0;
+    clear: both;
+}
+
+#lit div p:first-letter {
+    color: #363F41;
+    background-image: radial-gradient(white, #D3A1A1);
+    float: left;
+    font-size: 2em;
+    padding: 1rem;
+    margin-right: 1rem;
+    border: 2px solid #413232;
+    box-shadow: 3px 3px 3px #A56C6C;
+    text-shadow: 2px 2px 2px #B7D6DC;
 }
