@@ -9,7 +9,7 @@ header, footer {
     font-size: 150%;
    
 }
-#bio, #about-me, #favorite-music{
+#bio, #hobbies, #about-me, #favorite-music{
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
 }
@@ -33,4 +33,8 @@ header, footer {
 ul {
     text-align: center;
     list-style-position: inside;
+}
+
+h2 {
+    text-align: center;
 }
