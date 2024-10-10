@@ -27,11 +27,13 @@ header {
 
 #hero,footer {
     text-align: center;
-    color: white;
-    background-color: #9B9634;
+    color: rgb(0, 0, 0);
+    background-color: #74c258;
     padding: 10px;
-    border: 10px double #5C2CB0;
+    border: 5px solid #5C2CB0;
     border-radius: 100px;
+    box-shadow: inset 0px 0px 10px black;
+
 
 }
 
@@ -45,12 +47,13 @@ header {
 }
 
 #bio {
-    text-align: center;
-
+    text-align: auto;
+    list-style-position: inside;
+    display: inline-block;
 }
 
 #logo img {
-    background-color: #9B9634;
+    background-color: #74c258;
     border: 10px double #5C2CB0;
     padding: 10px;
     border-radius: 100px;
@@ -64,20 +67,27 @@ header {
 /* hobbies */
 
 #hobbies {
-    text-align: center;
+    text-align: auto;
+    list-style-position: inside;
+    display: inline-block;
+    float: right;
+
 }
+
 
 
 #hobbies ul li:nth-child(odd) {
     color: black;
-    
+
 }
 
 #gallery, article {
-    border: 10px double #5C2CB0;
+    border: 5px solid #5C2CB0;
     border-radius: 100px;
+    background-color: #74c258;
     text-align: center;
     margin-bottom: 20px;
+    box-shadow: inset 0px 0px 10px black;
 
 }
 #gallery figure {
@@ -88,6 +98,14 @@ header {
 }
 
 /* article */
+
+#lit {
+    background-color: #74c258;
+    font-size: 25px;
+    font-family: fantasy;
+    color: black;
+    
+}
 
 #lit div{
     text-align: justify;
@@ -101,12 +119,46 @@ header {
 
 #lit p::first-letter{
     color: black;
-    font-size: 3em;
+    font-size: 35px;
     float:left;
-    padding: 6px;  
-    border: 10px double black;;
+    padding: 6px;
+    border: 10px solid black;;
     margin-right: .25em;
     text-shadow: 1px 1px 1px black;
     box-shadow :1px 1px 1px black ;
-    background-image: radial-gradient(white, #5C2CB0);
+    background-image: radial-gradient(white, #4ada5d);
 }
+#container div {
+    border: 3px solid black;
+    padding: 10px; 
+    
+}
+#container {
+    border: 3px solid red;
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 100px auto;
+    grid-template-areas: "menu menu menu"
+                        "column main main";
+    
+    
+}
+#second {
+    grid-area: menu;
+
+}
+#first{
+    grid-area: column;
+}
+#fourth {
+    grid-area: main;
+}
+@media (max-width: 350px) {
+    #container{
+        display:block
+    }
+
+    
+} /* end of media state */
+
+
