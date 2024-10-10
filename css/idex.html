@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title> Grid , Flex, & Media States</title>
+ </head>
+<body>
+
+    <div id="container">
+
+     <div> our logo and hero</div><!--parent container-->   
+     <div>navigation </div>
+
+
+    </div>
+
+
+</body>
+
+
+
+
+<style>
+#container {
+    border:1px solid red;
+    display:grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 50px 200px 50px;
+    grid-template-areas:"main   main "
+                        "nav     content"
+                        "footer   footer";
+}
+#container div { 
+    border:1px solid black;
+}
+#container div : nth-child(1) { grid-area: main; }
+#container div : nth-child(2) { grid-area: nav; }
+#containeer div : nth-child(3) { grid-area: content; }
+#container div : nth-child(4) { grid-area: footer; }
+
+    @media (max-width: 300px) {
+
+        #container {
+            display:block;
+        }
+        #container div:nth-child(1) {
+            background: red;
+        }
+    }
+    @media (max-width: 400px) {
+        #container div:nth-child(2) {
+            background: green;
+        }
+    }
+
+</style>
+
+</body>
+
+</html>
