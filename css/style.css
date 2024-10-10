@@ -59,6 +59,8 @@ h2 {
 
 #gallery {
     border: 2px solid #E5E9EC;
+    margin-bottom:2rem;
+    font-family: "Josefin Sans", sans-serif;
 }
 
 #gallery img {
@@ -67,4 +69,36 @@ h2 {
 
 #gallery figure {
     text-align: center;
+}
+
+/* Literature */
+
+#lit {
+    border: 2px solid #E5E9EC;
+    margin-bottom:2rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#lit div {
+    padding: 2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+#lit div p {
+    padding: 0.3rem 0;
+    clear: both;
+}
+
+/* Dropcaps */
+
+#lit div p:first-letter {
+    color: #E5E9EC;
+    float: left;
+    font-size: 3rem;
+    padding: .25rem;
+    line-height: .95;
+    border:3px solid #E5E9EC; 
+    border-top-left-radius: .2rem;
+    border-bottom-left-radius: .2rem;
 }
