@@ -42,7 +42,7 @@ header, footer {
     text-align: center;
 }
 
-/*ul Text Style Section */
+/* ul Text Style Section */
 
 ul {
     text-align: center;
@@ -71,6 +71,10 @@ h2 {
     text-align: center;
 }
 
+#gallery figcaption {
+    padding-top: .5rem;
+}
+
 /* Literature */
 
 #lit {
@@ -96,9 +100,11 @@ h2 {
     color: #E5E9EC;
     float: left;
     font-size: 3rem;
-    padding: .25rem;
-    line-height: .95;
+    padding: .5rem;
     border:3px solid #E5E9EC; 
     border-top-left-radius: .2rem;
     border-bottom-left-radius: .2rem;
+    margin-right: .5ex;
+    margin-bottom: .5ex;
+    padding-top: 1ex;
 }
