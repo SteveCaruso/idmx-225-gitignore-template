@@ -9,7 +9,10 @@ header{
 }
 h1,h2,h3,h4,h5,h6{
     font-family: Oswald, Impact, sans-serif; 
-    font-size: 300%;
+}
+h1 {
+    font-size: 40pt;
+    text-align: center;
 }
 #hero, footer {
     text-align: center;
@@ -27,4 +30,11 @@ width: 300px;
     color: white;
     font-size:100%;
 
+}
+#bio {
+    text-align: center;
+}
+
+#hobbies ul li:nth-child(even) {
+    color:aliceblue;
 }
