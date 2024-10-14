@@ -22,9 +22,15 @@ h1 {
     border: 10px outset #bf77e0;
     border-radius: 40px;
 }
+
+/* Hero Section */
+
 #hero img {
 width: 300px; 
 }
+
+/* Bio Section */ 
+
 #bio, #me{
     text-align: center;
     color: white;
@@ -35,6 +41,24 @@ width: 300px;
     text-align: center;
 }
 
-#hobbies ul li:nth-child(even) {
-    color:aliceblue;
+/* Hobbies Section */ 
+
+#hobbies ul li:nth-child {
+    color:white;
+    text-align: center;
+    text-size-adjust: 100% ;
+}
+
+/* Gallery Section */ 
+
+#gallery {
+    border: 40px solid lightblue;
+}
+
+#gallery img {
+    max-width:100%; 
+}
+
+#gallery figure {
+    text-align: center;
 }
