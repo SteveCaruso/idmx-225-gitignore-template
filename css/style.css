@@ -91,7 +91,7 @@ header {
     clear: both;
 }
 
-#lit div p:first-letter {
+#lit div p:first-child::first-letter {
     color: #363F41;
     background-image: radial-gradient(white, #D3A1A1);
     float: left;
@@ -106,7 +106,7 @@ header {
 @media screen and (min-width: 60em){
     figure {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
         /*align-items: center;*/
     }
 
@@ -117,4 +117,13 @@ header {
         font-size: 25px;
         margin-left: 1rem;
     }
+
+    figure img {
+        width: 100%;
+    }
+
+    #lit div {
+        max-width: 100%;
+        columns: 40rem;
+    } 
 }
