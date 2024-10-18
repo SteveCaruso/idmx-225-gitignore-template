@@ -123,10 +123,6 @@ h2 {
     margin-bottom: 1rem;
 }
 
-/* Add a wildcard selector to outline all elements for debugging */
-* {
-    outline: 1px solid red; /* You can use this to check element boundaries */
-}
 
 
 @media screen and (min-width: 60em) {
