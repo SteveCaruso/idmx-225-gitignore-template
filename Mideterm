@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset=utf-8><!-- Define the character encoding of the document as UTF-8 -->
+<title>Create a speech bubble shape with CSS3</title><!-- Set the title of the HTML page -->
+<style type="text/css">
+/* CSS styles start here */
+
+#speech-bubble {
+width: 120px; /* Set the width of the speech bubble */
+height: 80px; /* Set the height of the speech bubble */
+background: 
+#5ac4ed; /* Set the background color of the speech bubble */
+position: absolute; /* Set the position of the speech bubble */
+left:100px; /* Set the distance from the left edge of the containing element */
+   -moz-border-radius: 10px; /* Set the border radius for Mozilla Firefox */
+   -webkit-border-radius: 10px; /* Set the border radius for WebKit browsers */
+border-radius: 10px; /* Set the border radius for other browsers */
+}
+
+#speech-bubble:before {
+content:""; /* Insert empty content before the speech bubble */
+position: absolute; /* Set the position of the pseudo-element */
+width: 0; /* Set the width of the pseudo-element */
+height: 0; /* Set the height of the pseudo-element */
+border-top: 13px solid 
+transparent; /* Create the top triangle of the speech bubble */
+border-right: 26px solid 
+#5ac4ed; /* Create the right side of the speech bubble */
+border-bottom: 13px solid 
+transparent; /* Create the bottom triangle of the speech bubble */
+margin: 13px 0 0 -25px; /* Set the margins to position the pseudo-element */
+}
+
+/* CSS styles end here */
+</style>
+</head>
+<body>
+<div id="speech-bubble"></div><!-- Create a div element with the id "speech-bubble" -->
+</body>
+</html>

@@ -5,10 +5,12 @@ body{
 
 header{
     text-align: center;
-    color: #e0779f;
+    color: white;
 }
 h1,h2,h3,h4,h5,h6{
     font-family: Oswald, Impact, sans-serif; 
+    text-align: center;
+    font-size: 40pt;
 }
 h1 {
     font-size: 40pt;
@@ -19,7 +21,7 @@ h1 {
     background-color: #e0779f;
     color: white;
     padding: 30px;
-    border: 10px outset #bf77e0;
+    border: 10px outset palevioletred; 
     border-radius: 40px;
 }
 
@@ -34,11 +36,14 @@ width: 300px;
 #bio, #me{
     text-align: center;
     color: white;
-    font-size:100%;
+    font: size large;
+    text-align: center;
+    border: 10px outset lightblue; 
 
 }
 #bio {
     text-align: center;
+    font-size: large;
 }
 
 /* Hobbies Section */ 
@@ -46,19 +51,108 @@ width: 300px;
 #hobbies ul li:nth-child {
     color:white;
     text-align: center;
-    text-size-adjust: 100% ;
+    font-size: large;
+ 
 }
 
+#hobbies {
+    text-align: center;
+    font-size: large;
+    color: white;
+    border: 10px outset palevioletred; 
+}
 /* Gallery Section */ 
 
 #gallery {
-    border: 40px solid lightblue;
+    text-align: center;
+    color:white;
+    padding: 30px;
+    border: 30px outset lightblue;
+    border-radius: 50px;
 }
 
 #gallery img {
     max-width:100%; 
+    text-align: center;
+    color: white;
+    
 }
 
 #gallery figure {
     text-align: center;
+    color: white;
+    font-size: large;
+}
+
+#gallery figcaption {
+    text-align: center;
+    color:white;
+    font-size: large;
+}
+
+/* Literature */
+#lit {
+    border: 30px outset palevioletred; 
+    margin-bottom: 2 rem;
+    color: black; 
+    text-size-adjust: 50pt;
+
+
+}
+
+#lit div {
+    padding: 30px; 
+    max-width: 40em;
+    margin: 0 auto; 
+}
+
+#lit div p {
+    padding:0.3rem 0;
+    clear:both;
+}
+
+#lit div p:first-child:first-letter {
+    color: black; 
+    background-image: radial-gradient(lightblue);
+    float:left;
+    font-size:3em;
+    padding: 0.25em;
+    margin-right: 0.25em;
+    line-height: 0.65em; 
+    border: 4px solid palevioletred; 
+    font-family:cursive; 
+    text-shadow: 5px 5px 3px yellow (0,0,0,.5); 
+}
+
+/* Video */ 
+
+
+#videoContainerContainer {
+    max-width: 100%;
+    width: 700px;
+    margin-left: auto;
+    margin-right:auto;
+    padding-bottom:5rem;
+
+}
+
+#videoContainer {
+    position:relative;
+    overflow:hidden;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:56.25%; /* 16:9 = 56.25% 
+                        4:3 = 75%
+                        */ 
+}
+
+#myVideo {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%; 
+    height:100%;
 }
