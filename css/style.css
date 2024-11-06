@@ -168,12 +168,15 @@ fieldset {
     border: 2px solid #363F41;
     margin-top: 1em;
     margin-bottom: 1em;
+    box-shadow: 2px 2px 2px #4a5254;
 }
 
 legend {
+    border: 1px solid #363F41;
     background-color: #363F41;
     color: white;
     padding: .5em;
+    box-shadow: 3px 3px #4a5254;
 }
 
 #contact input, #contact textarea, #contact select, #contact button {
@@ -193,11 +196,17 @@ legend {
 #contact button {
     background-color: #363F41;
     color: white;
-    border: 1px solid #252c2d;
+    border: 2px solid black;
     max-width: 400px;
     width: 50%;
     justify-self: center;
 }
+
+#contact button:hover {
+    background-color: #A56C6C;
+}
+
+
 
 /*Small Screen Size*/
 
