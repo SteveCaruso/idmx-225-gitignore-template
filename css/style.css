@@ -281,4 +281,31 @@ header {
 
 #formElements{
     display: grid;
+    row-gap: 1em;
+
+}
+
+#contact{
+    padding: 1em;
+    max-width: 1000px;
+    margin: 2em auto;
+    font-size: 5px;
+}
+
+fieldset{
+    border: 5px solid #5C2CB0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 30px;
+
+}
+
+#contact input{
+    padding: 0.5em;
+    font-size: 10px;
+}
+
+#contact ul{
+    list-style: none;
+    padding: 0;
 }
