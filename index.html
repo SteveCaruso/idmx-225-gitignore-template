@@ -144,7 +144,7 @@
 
 
 
-    </main>
+
 
     <section id="video">
 
@@ -155,6 +155,79 @@
         </div>
         
         <figcaption>this is first video of my channel </figcaption>
+
+        <section id="conact">
+
+            <h2>Contact Us:</h2>
+
+            <form id="contactForm" name="contactForm" method="post" data-netlify="true">
+                <fieldset>
+                    <legend>Contact form</legend>
+                    
+                    <div id="formElements">
+
+                        <!-- Name -->
+
+                        <label for="name">Name (Required)</label>
+                        <input type="text" id="name" name="name" required placeholder="Name"> 
+
+                        <!-- email -->
+
+                        <label for="email">Email (Required)</label>
+                        <input type="email" id="email" name="email" required placeholder="Email">
+
+                        <!-- phone -->
+
+                        <label for="phone">Phone (Required)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone">
+
+                        <!-- phone type -->
+
+                        <label for="phonetype">Phone Type (Optional)</label>
+                        <select id="phonetype" name="phonetype">
+                            <option value="">Select phone type</option>
+                            <option value="Mobile">Mobile</option>
+                            <option value="Work">Work</option>
+                            <option value="Home">Home</option>
+                        </select>
+
+                        <!-- message -->
+
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" id="message" rows="8" placeholder="send text"></textarea>
+
+                        <!-- reply -->
+
+                        <fieldset>
+                            <legend>Would you like to reply?</legend>
+
+                            <ul>
+                                <li>
+                                    <input type="radio" id="message-yes" name="reply" value="Yes reply please">
+                                    <label for="message-yes"> Yes reply would be nice </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="message-no" name="reply" value="No reply please" checked >
+                                    <label for="message-no" > no thanks </label>
+                                </li>
+
+                            </ul>
+                        </fieldset>
+
+                        <!-- submit -->
+                         <button id="submit">Send</button>
+
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+        
+
+    </main>
 
     </section>
 

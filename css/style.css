@@ -3,8 +3,8 @@ body {
     color: #4edb1c;
     font-family: "Rubik Bubbles", system-ui;
     font-size: 25pt;
-    background-image: url(../img/pexels-philippedonn-1169754.jpg);
-    background-size: 1800px; 
+    background-image: url(../img/space1.jpg);
+    background-size: 100%; 
     
     
     /* background-blend-mode: exclusion; */
@@ -132,7 +132,7 @@ header {
     
 }
 #gallery img { 
-    size: 100px;
+    width: 100%;
     border-radius: 50px;
     box-shadow: 10px 10px 10px rgb(40, 150, 0);
     
@@ -156,11 +156,11 @@ header {
 
 #lit div{
     text-align: justify;
-    padding: 100px;
+    padding: 30px;
     padding-top: 0;
     margin-left: auto;
     margin-right: auto;
-
+    font-size: 60%;
     
 }
 
@@ -212,6 +212,7 @@ header {
     #lit div{
         max-width: 100%;
         columns: 20rem;
+        font-size: 70%;
 
     }
 
@@ -236,6 +237,8 @@ header {
     figure {
         display: block;
     }
+
+    
 }
 
 /* video */
@@ -274,3 +277,8 @@ header {
     margin-top: 30px;
  }
 
+/* Contact form */
+
+#formElements{
+    display: grid;
+}
