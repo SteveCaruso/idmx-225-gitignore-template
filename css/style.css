@@ -57,6 +57,11 @@ h2 {
 
 /* Gallery */
 
+#gallery h2 { 
+    border-bottom: 2px solid #E5E9EC;
+    padding-bottom:1rem;
+}
+
 #gallery {
     border: 2px solid #E5E9EC;
     margin-bottom:2rem;
@@ -71,9 +76,11 @@ h2 {
     text-align: center;
 }
 
+
 #gallery figcaption {
     padding-top: .5rem;
 }
+
 
 /* Literature */
 
@@ -131,6 +138,7 @@ h2 {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 1rem; /* Optional: adds space between image and caption */
+        
     }
 
     #gallery figcaption {
@@ -170,6 +178,9 @@ h2 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
+
+        margin-bottom:2rem;
+        gap:0px !important;
     }
 
     /* Hide extra horizontal rules */
@@ -181,10 +192,23 @@ h2 {
     #gallery h2 {
         grid-column: 1 / -1;
         text-align: center;
+
+        border-bottom: 2px solid #E5E9EC;
+        margin-bottom: 0;
+        padding-bottom:1rem;
     }
 
     /* Reset figure to display block */
     #gallery figure {
         display: block;
+        border-left: 2px solid #E5E9EC;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 2.5rem;
+        padding-right:0rem;
+    }
+    
+    #gallery figure:first-of-type {
+        border-left:none !important;
     }
 }
