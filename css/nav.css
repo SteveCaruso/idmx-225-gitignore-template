@@ -49,18 +49,31 @@ main {
 
 /* navigation list */
 
+.navbar-links li {
+    list-style: none;
+    display: block;
+    padding: 0.25em;
+}
+
 
 /*
 style all a tags in header
 and then on hover
 */
+.navbar-links a {
+    color: #B7D6DC;
+    background-color: #A56C6C;
+    font-size: 1.2rem;
+    padding: 0;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
 
 
 
 
-
-/* 
+/*
 media query for non-mobile nav bar
-min-width set to width of nav elements 
-such that no text wraps 
+min-width set to width of nav elements
+such that no text wraps
 */
