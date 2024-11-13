@@ -52,7 +52,7 @@ main {
 .navbar-links li {
     list-style: none;
     display: block;
-    padding: 0.25em;
+    padding: 0.25 0;
 }
 
 
@@ -64,11 +64,17 @@ and then on hover
     color: #B7D6DC;
     background-color: #A56C6C;
     font-size: 1.2rem;
-    padding: 0;
+    padding: .5rem .85rem;
     letter-spacing: 2px;
     text-decoration: none;
+    display: inline-block;
 }
 
+.navbar-links a:hover, .navbar-links a:focus {
+    filter: invert(1);
+    border-radius: 10px;
+
+}
 
 
 
