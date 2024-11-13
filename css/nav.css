@@ -24,13 +24,25 @@ main{
 
 /* navbar */
 
-.navbar{
-    background-color: #5C2CB0;
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.navbar {
+    background: linear-gradient(270deg, #6e40bc, #5c4782, #5C2CB0); 
+    background-size: 300% 300%; 
+    animation: gradientMove 10s ease infinite; 
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
     padding: 1rem;
 }
+
 
 
 
@@ -69,7 +81,7 @@ main{
 
 .navbar a{
     color: whitesmoke;
-    background-color: #5C2CB0;
+    
     text-decoration: none;
     display: inline-block;
     font-size: 2rem;
