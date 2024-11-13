@@ -17,10 +17,6 @@ h1 h2 h3 h4 h5 h6 {
 
 }
 
-header img{
-    max-width: 100%;
-}
-
 
 header {
 
@@ -43,11 +39,25 @@ header {
 
 }
 
-#hero img {
+#hero > img {
     width: 350px;
     max-width: 100%;
-    
+    margin-top: 40px;
+    border-radius: 1000px;
+    box-shadow: 0px 0px 15px black;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+#hero img:hover {
+    transform: scale(1.05); 
+}
+
+#hero > img:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+
 #insta {
     width:40px !important;
     margin-bottom: 6.6px;
@@ -78,11 +88,9 @@ header {
 }
 
 #logo img {
-    background-color: #74c258;
-    border: 10px solid #5C2CB0;
     padding: 10px;
-    border-radius: 100px;
-    width: 150px;
+    border-radius: 35px;
+    max-width: 100%;
 }
 
 #bio img {
@@ -112,6 +120,11 @@ header {
     color: #5C2CB0;
 }
 
+figcaption div{
+    font-size: 80%;
+}
+
+
 #gallery, article {
     border: 5px solid #5C2CB0;
     border-radius: 100px;
@@ -129,9 +142,10 @@ header {
     
 }
 #gallery img { 
-    width: 80%;
+    width: 100%;
     border-radius: 50px;
     box-shadow: 10px 10px 10px rgb(40, 150, 0);
+    
     
     
 }
@@ -190,15 +204,17 @@ header {
 @media screen and (min-width: 60em ){
     figure{ 
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 60% 40%;
     }
     
     figcaption{
     display: flex;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    margin-left: 5rem;
+    padding-left:10%;
+    padding-right:10%;
     }
     
 
@@ -220,6 +236,7 @@ header {
     #gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 25px;
     }
 
     hr {
