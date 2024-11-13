@@ -15,23 +15,39 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body>
 
     <!--The body tag is what is shown to the visitors-->
 
+    <!--the header shows the logo and page title. -->
+
     <header id="logo">
 
-        <!--the header shows the logo and page title. -->
-        <img src="img/logo-96X96.svg" alt="A blue origami bird">
-        <h1>Web Dev 1</h1>
-
+        <nav class="navbar">
+            <div class="logo"><img src="img/logo-96X96.svg" alt="A blue origami bird">
+                <h1>Web Dev 1</h1>
+            </div>
+            <div calss="navbar-links">
+                <ul>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#lit">Blog</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
 
         <!-- the main contains important page content -->
+
+
+
+
 
         <section id="hero">
             <img src="img/avataaars.png" alt="my avatar">
@@ -146,17 +162,20 @@
 
 
 
-    <section id="video">
+        <section id="video">
 
-        <H2>My video</H2>
-        
-        <div id="videoContainer">
-            <iframe id="myVideo" src="https://www.youtube.com/embed/kNdBJRe_sA0?si=Pqix3cNNWIeIw4Fc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        
-        <figcaption>this is first video of my channel </figcaption>
+            <H2>My video</H2>
 
-    </section>
+            <div id="videoContainer">
+                <iframe id="myVideo" src="https://www.youtube.com/embed/kNdBJRe_sA0?si=Pqix3cNNWIeIw4Fc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <figcaption>this is first video of my channel </figcaption>
+
+        </section>
 
         <section id="contact">
 
@@ -164,13 +183,13 @@
             <form id="contactForm" netlify>
                 <fieldset>
                     <legend>Contact form</legend>
-                    
+
                     <div id="formElements">
 
                         <!-- Name -->
 
                         <label for="name">Name (Required)</label>
-                        <input type="text" id="name" name="name" required placeholder="Name"> 
+                        <input type="text" id="name" name="name" required placeholder="Name">
 
                         <!-- email -->
 
@@ -208,15 +227,15 @@
                                     <label for="message-yes"> Yes reply would be nice </label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="message-no" name="reply" value="No reply please" checked >
-                                    <label for="message-no" > no thanks </label>
+                                    <input type="radio" id="message-no" name="reply" value="No reply please" checked>
+                                    <label for="message-no"> no thanks </label>
                                 </li>
 
                             </ul>
                         </fieldset>
 
                         <!-- submit -->
-                         <button id="submit">Send</button>
+                        <button id="submit">Send</button>
 
                     </div>
 
@@ -226,7 +245,7 @@
 
         </section>
 
-        
+
 
     </main>
 

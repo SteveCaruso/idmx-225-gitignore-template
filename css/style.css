@@ -82,7 +82,7 @@ header {
 
 #logo img {
     background-color: #74c258;
-    border: 10px double #5C2CB0;
+    border: 10px solid #5C2CB0;
     padding: 10px;
     border-radius: 100px;
     width: 150px;
