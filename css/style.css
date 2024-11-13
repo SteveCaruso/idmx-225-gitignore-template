@@ -6,7 +6,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family:"Poppins";
+    font-family: Sansita;
     text-align: center;
     font-size: 30px;
     margin-bottom: 0;
@@ -23,7 +23,7 @@ header {
     text-align: center;
 }
 
-#hero, footer {
+footer {
     color: #B7D6DC;
     border: 2px solid #413232;
     background-color: #A56C6C;
@@ -32,6 +32,11 @@ header {
 }
 
 /*Hero Section*/
+
+#hero {
+    justify-items: center;
+
+}
 
 #hero img {
     width: 300px;
@@ -48,13 +53,13 @@ header {
 
 /*Hobbies Section*/
 
-#hobbies {
+/* #hobbies {
     color: #413232;
-    text-shadow: 2px 2px 2px #A56C6C;
-    display: flex;
+    /* text-shadow: 2px 2px 2px #A56C6C;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-}
+/* }
 
 /*Gallery Section*/
 
