@@ -20,6 +20,14 @@ main {
 
 
 /* navbar */
+.navbar {
+    background-color: #A56C6C;
+    color: #B7D6DC;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
 
 
 
