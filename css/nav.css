@@ -21,8 +21,8 @@ main {
 
 /* navbar */
 .navbar {
-    background-color: #A56C6C;
-    color: #B7D6DC;
+    background-color: #413232;
+    color: white;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
@@ -62,8 +62,8 @@ style all a tags in header
 and then on hover
 */
 .navbar-links a {
-    color: #B7D6DC;
-    background-color: #A56C6C;
+    color: white;
+    background-color: #413232;
     font-size: 1.2rem;
     padding: .5rem .85rem;
     letter-spacing: 2px;
