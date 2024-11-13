@@ -32,14 +32,26 @@ main {
 
 
 /* logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
 
+.logo img {
+    height: 6vw;
+    width: 6vw;
+}
 
+.logo h1 {
+    font-size: .8em;
+    margin-top: 0;
+}
 
 /* navigation list */
 
 
-/*  
-style all a tags in header 
+/*
+style all a tags in header
 and then on hover
 */
 
