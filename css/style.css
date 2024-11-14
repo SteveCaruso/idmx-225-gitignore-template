@@ -12,20 +12,22 @@ body {
 header, footer {
     text-align: center;
     font-size: 150%;
-   
 }
 
 /* Bio, Hobbies, About Me, and Favorite Music Text Style Section */
 
 #bio, #hobbies, #about-me, #favorite-music{
-    text-align: center;
     font-family: "Josefin Sans", sans-serif;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
 }
 
 /* Hero img Section */
 
 #hero img {
     width: 275px;
+    max-width:100%;
 }
 
 /* Hero and Footer Text Style Section */
@@ -34,18 +36,20 @@ header, footer {
     font-family: "Josefin Sans, sans-serif";
     background-color:#FDE74C;
     color: #5B7C99;
-    padding: 10px;  
-    border: 5px solid #E5E9EC;
-    width: 685px;
-    margin: 0 auto;
     font-size: 24px;
     text-align: center;
+    border: 5px solid #E5E9EC;
+    
+    box-sizing: border-box;
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 100% !important;
 }
 
 /* ul Text Style Section */
 
 ul {
-    text-align: center;
     list-style-position: inside;
 }
 
@@ -133,6 +137,7 @@ h2 {
 
 
 @media screen and (min-width: 60em) {
+    
     /* Gallery Grid Layout */
     #gallery figure {
         display: grid;
@@ -154,6 +159,7 @@ h2 {
         max-width: 100%;
         columns: 40rem;
     }
+
 }
 
 
@@ -173,12 +179,12 @@ h2 {
 
 
 @media screen and (min-width: 100em) {
+    
     /* Larger Screen - 3 Column Grid for Gallery */
     #gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
-
         margin-bottom:2rem;
         gap:0px !important;
     }
@@ -192,7 +198,6 @@ h2 {
     #gallery h2 {
         grid-column: 1 / -1;
         text-align: center;
-
         border-bottom: 2px solid #E5E9EC;
         margin-bottom: 0;
         padding-bottom:1rem;
