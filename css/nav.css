@@ -77,6 +77,8 @@ and then on hover
 
 }
 
+/*icon*/
+
 
 
 /*
@@ -86,11 +88,11 @@ such that no text wraps
 */
 @media screen and (min-width: 60rem) {
 
-    /* .navbar-links {
+    .navbar-links {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    } */
+    } 
 
     .navbar {
         flex-direction: row;
@@ -108,6 +110,8 @@ such that no text wraps
 
     .logo h1 {
         font-size: 1.2em;
-    }
+    } 
+
+    
 
 }
