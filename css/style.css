@@ -1,13 +1,13 @@
 body {
     font-family: Nunito;
-    background-color: #D3A1A1;
-    color: #363F41
+    background-color: #FEFAF8;
+    color: #402D21
 
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Sansita;
-    text-align: center;
+    text-align: left;
     font-size: 30px;
     margin-bottom: 0;
 }
@@ -24,9 +24,9 @@ header {
 }
 
 footer {
-    color: #B7D6DC;
-    border: 2px solid #413232;
-    background-color: #A56C6C;
+    color: white;
+    /* border: 2px solid #413232; */
+    background-color: #1C2E4A;
     text-align: center;
     padding: 10px;
 }
@@ -45,10 +45,10 @@ footer {
 /*Bio Section*/
 
 #bio {
-    text-align: center;
-    display: flex;
+    text-align: left;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 
 /*Hobbies Section*/
@@ -64,7 +64,7 @@ footer {
 /*Gallery Section*/
 
 #gallery {
-    border: 2px solid #363F41;
+    border: 2px solid #1C2E4A;
     margin-bottom: 2rem;
 }
 
@@ -88,8 +88,13 @@ footer {
 
 /*Article Section*/
 #lit {
-    border: 2px solid #363F41;
+    border: 2px solid #1C2E4A;
     margin-bottom: 2rem;
+}
+
+#lit h2 {
+    margin-top: 1rem;
+    text-align: center;
 }
 
 #lit div {
@@ -106,15 +111,22 @@ footer {
 
 #lit div p:first-child::first-letter {
     font-family: Fredericka the Great;
-    color: #363F41;
+    color: #402D21;
     /* background-image: radial-gradient(white, #D3A1A1); */
     /* float: left; */
-    font-size: 3rem;
+    font-size: 4rem;
     padding: 1rem;
     margin-right: 0;
     /* border: 2px solid #413232; */
     /* box-shadow: 3px 3px 3px #A56C6C;
     text-shadow: 2px 2px 2px #B7D6DC; */
+}
+
+/*Blog* Section*/
+
+#blog h1 {
+    text-align: center;
+
 }
 
 /*Video Section*/
@@ -158,6 +170,7 @@ footer {
 
 }
 
+
 /*Contact Form*/
 #formElements {
     display: grid;
@@ -171,18 +184,18 @@ footer {
 }
 
 fieldset {
-    border: 2px solid #363F41;
+    border: 2px solid #1C2E4A;
     margin-top: 1em;
     margin-bottom: 1em;
-    box-shadow: 2px 2px 2px #4a5254;
+    box-shadow: 2px 2px 2px #1C2E4A;
 }
 
 legend {
-    border: 1px solid #363F41;
-    background-color: #363F41;
+    border: 1px solid #1C2E4A;
+    background-color: #1C2E4A;
     color: white;
     padding: .5em;
-    box-shadow: 3px 3px #4a5254;
+    box-shadow: 3px 3px #1C2E4A;
 }
 
 #contact input, #contact textarea, #contact select, #contact button {
@@ -200,7 +213,7 @@ legend {
 }
 
 #contact button {
-    background-color: #363F41;
+    background-color: #1C2E4A;
     color: white;
     border: 2px solid black;
     max-width: 400px;
@@ -209,7 +222,7 @@ legend {
 }
 
 #contact button:hover {
-    background-color: #A56C6C;
+    background-color: #CED9E5;
 }
 
 
