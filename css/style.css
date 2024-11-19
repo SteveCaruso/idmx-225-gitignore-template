@@ -42,6 +42,18 @@ footer {
     width: 300px;
 }
 
+#hero p {
+    text-align: center;
+    padding: 2px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#hero hr {
+    border: 1px solid #1C2E4A;
+}
+
 /*Bio Section*/
 
 #bio {
