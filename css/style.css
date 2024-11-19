@@ -85,6 +85,40 @@ h2 {
     padding-top: .5rem;
 }
 
+/* Short Video Section */
+
+#video {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#video figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #E5E9EC;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #FDE74C;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+#video iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Maintains the aspect ratio */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+#video figcaption {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
 
 /* Literature */
 
@@ -158,6 +192,11 @@ h2 {
     #lit div {
         max-width: 100%;
         columns: 40rem;
+    }
+
+    #video iframe {
+        max-width: 100%;
+        height: auto;
     }
 
 }
