@@ -104,8 +104,12 @@ h2 {
 }
 
 #video iframe {
-    width: 100%;
+    max-width: 100%;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     height: auto;
+    display: block;
     aspect-ratio: 16 / 9; /* Maintains the aspect ratio */
     border: none;
     border-radius: 5px;
@@ -115,8 +119,8 @@ h2 {
 #video figcaption {
     text-align: center;
     font-size: 1rem;
-    margin-top: 0.5rem;
-    padding-bottom: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 
