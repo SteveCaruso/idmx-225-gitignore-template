@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link rel="icon" href="/img/1.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,17 +22,24 @@
 
 <body>
 
-    <!--The body tag is what is shown to the visitors-->
-
-    <!--the header shows the logo and page title. -->
 
     <header id="logo">
 
         <nav class="navbar">
-            <div class="logo"><img src="img/1.png" alt="Logo of my page">
+            <div class="logo">
+                <img src="img/1.png" alt="Logo of my page">
                 <h1>About Me</h1>
             </div>
-            <div calss="navbar-links">
+            
+            <!-- nav bar with hamburger icon -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            
+            <label for="menu-toggle" class="hamburger">
+                <img src="img/more.png" alt="Menu Icon" class="hamburger-icon">
+                <img src="img/close.png" alt="Close Icon" class="hamburger-icon-open">
+            </label>
+        
+            <div class="navbar-links">
                 <ul>
                     <li><a href="#bio">Bio</a></li>
                     <li><a href="#gallery">Gallery</a></li>
@@ -38,15 +47,12 @@
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
-        </nav>
+        </nav>        
     </header>
 
     <main>
 
         <!-- the main contains important page content -->
-
-
-
 
 
         <section id="hero">
@@ -71,8 +77,9 @@
             <!-- biographical information -->
             <h2>About me</h2>
             <p>
-                I enjoy listening to music and love playing video games. Sports are great for staying active and
-                healthy. Driving cars is exciting, and I always look forward to hitting the road.
+                i like music because it makes me happy and relaxed. Playing video games is so much fun since I am introduced to various new worlds and challenges, Sports keep me fit and healthy. Even more, driving a car is quite exciting; it keeps you free, enjoying the fun of being on the road.
+
+
             </p>
 
 
@@ -180,10 +187,7 @@
             <H2>My video</H2>
 
             <div id="videoContainer">
-                <iframe id="myVideo" src="https://www.youtube.com/embed/kNdBJRe_sA0?si=Pqix3cNNWIeIw4Fc"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               <iframe id="myVideo" src="https://www.youtube.com/embed/Zsh63Bnez88?si=nrUe8lkJgbFMk20b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
             <figcaption>this is first video of my channel </figcaption>
