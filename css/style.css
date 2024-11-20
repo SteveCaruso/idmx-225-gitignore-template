@@ -53,13 +53,17 @@ footer {
     text-align: center;
     padding: 2px;
     margin: 0;
-    font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
 }
 
-/* #hero hr {
-    border: .5px solid #1C2E4A;
-} */
+.myName {
+    font-weight: 650;
+    
+}
+
+.quote {
+    font-weight: 400;
+}
 
 /*Bio Section*/
 
