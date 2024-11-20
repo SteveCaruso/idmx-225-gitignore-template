@@ -75,9 +75,14 @@ svg {
     fill: white;
 }
 
+.close {
+    display: none;
+}
+
 .menu {
     margin-top: 0.2rem;
 }
+
 
 .nav-checkbox {
     display: none;
@@ -88,6 +93,14 @@ svg {
 #nav-checkbox:checked ~ .navbar-links li {
     display: block;
 
+}
+
+#nav-checkbox:checked ~ label.nav-icon .close {
+    display: block;
+}
+
+#nav-checkbox:checked ~ label.nav-icon .menu {
+    display: none;
 }
 
 
