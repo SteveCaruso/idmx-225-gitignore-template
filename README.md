@@ -1,28 +1,28 @@
 # README
 
-##By: Pipatporn Chaluthong
+## By: Pipatporn Chaluthong
 
-##Netlify Status Badge
+## Netlify Status Badge
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/18ed1883-1e02-46d3-bbe6-9480a26656b1/deploy-status)](https://app.netlify.com/sites/about-me-npcha/deploys)
 
-##Header (Navbar)
+## Header (Navbar)
 
-##Hero (Main)
+## Hero (Main)
 
-##Bio (About Me)
+## Bio (About Me)
 
-##Gallery (My Artwork)
+## Gallery (My Artwork)
 
-##Lit (My Story)
+## Lit (My Story)
 
-##Blog (My Blog)
+## Blog (My Blog)
 
-##Contact (Contact Me)
+## Contact (Contact Me)
 
-##Color Scheme
+## Color Scheme
 
-##Citation
+## Citation
 
 
 
