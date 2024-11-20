@@ -1,6 +1,6 @@
 # README
 
-## By: Pipatporn Chaluthong <img src="img/logo-favicon.png" width="50" height="50" alt="A new logo." />
+## By: Pipatporn Chaluthong <img src="img/logo-favicon.png" width="50" height="50" alt="A new logo."/>
 
 ## Netlify Status Badge
 
@@ -14,9 +14,7 @@
 
 ## Gallery (My Artwork)
 
-## Lit (My Story)
-
-## Blog (My Blog)
+## Lit (My Blog)
 
 ## Contact (Contact Me)
 

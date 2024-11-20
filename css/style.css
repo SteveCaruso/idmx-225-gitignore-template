@@ -186,7 +186,7 @@ figure img {
 }
 
 
-/*Article Section*/
+/*Article/Blog Section*/
 
 #lit {
     border: 2px solid #1C2E4A;
@@ -223,12 +223,13 @@ figure img {
     text-shadow: 2px 2px 2px #B7D6DC; */
 }
 
-/*Blog Section*/
 
-#blog h1 {
-    text-align: center;
 
-}
+
+
+
+
+
 
 /*Video Section*/
 
