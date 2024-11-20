@@ -23,12 +23,19 @@ header {
     text-align: center;
 }
 
+/*Footer Section*/
 footer {
     color: white;
-    /* border: 2px solid #413232; */
+    font-size: 18px;
     background-color: #1C2E4A;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    
+}
+
+.github {
+    height: 20px;
+    width: 20px;
 }
 
 /*Hero Section*/
@@ -145,7 +152,32 @@ figure img {
     text-align: center;
 }
 
-.hover-effect:hover .effect-text {
+.effect-text-with-link {
+    font-size: 35px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #402D21;
+    transition: bottom 0.3s ease;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.link {
+    fill: #402D21;
+    padding-left: 250px;
+    padding-bottom: 3px;
+    height: 20px;
+    width: 20px;
+}
+
+.hover-effect:hover .effect-text  {
+    bottom: 0;
+}
+
+.hover-effect:hover .effect-text-with-link {
     bottom: 0;
 }
 
@@ -187,7 +219,7 @@ figure img {
     text-shadow: 2px 2px 2px #B7D6DC; */
 }
 
-/*Blog* Section*/
+/*Blog Section*/
 
 #blog h1 {
     text-align: center;
