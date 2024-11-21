@@ -16,6 +16,8 @@
 
 ## Lit (My Blog)
 
+## Video (My Video)
+
 ## Contact (Contact Me)
 
 ## Color Scheme
