@@ -4,7 +4,6 @@ body {
     color:  #FDE74C;
     background-color: #5B7C99;
     font-family: "Playfair Display", serif;
-
 }
 
 /* Header and Footer Text Style Section */
@@ -18,7 +17,7 @@ header, footer {
 
 #bio, #hobbies, #about-me, #favorite-music{
     font-family: "Josefin Sans", sans-serif;
-    display: flex; 
+    display: flex;
     flex-direction: column; 
     align-items: center;
 }
@@ -33,7 +32,7 @@ header, footer {
 /* Hero and Footer Text Style Section */
 
 #hero, footer{
-    font-family: "Josefin Sans, sans-serif";
+    font-family: "Playfair Display", sans-serif;
     background-color:#FDE74C;
     color: #5B7C99;
     font-size: 24px;
@@ -172,7 +171,11 @@ h2 {
     margin-bottom: 1rem;
 }
 
-/* Contact Form */
+/* Contact Section */
+#contact {
+    font-family: "Josefin Sans", sans-serif;
+}
+
 #formElements {
     display: grid;
 }
