@@ -180,7 +180,26 @@
 
                   <!-- Message -->
                   <label for="message">Message (optional)</label>
-                  <textarea id="message" name="message"></textarea>
+                  <textarea id="message" name="message" rows="8"></textarea>
+
+                  <!-- Follow-Up Preference -->
+                  <fieldset>
+                    <legend>Would you like a follow-up?</legend> 
+                    
+                  </fieldset> 
+                  <ul>
+                    <li>
+                        <input type="radio" id="message-yes" name="reply" value="Yes a reply please">
+                        <label for="message-yes"> Yes a reply would be great. </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="message-no" name="reply" value="No reply please" checked="true">
+                        <label for="message-no"> No, thank you. </label>
+                    </li>
+                  </ul>
+
+                  <!-- Submit Button -->
+                  <button type="submit">Submit</button>
 
             
                 </div>
