@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="icon" href="/img/1.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Permanent+Marker&family=Rubik+Bubbles&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+
+<body>
+
+
+    <header id="logo">
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/1.png" alt="Logo of my page">
+                <h1>About Me</h1>
+            </div>
+
+            <!-- nav bar with hamburger icon -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <label for="menu-toggle" class="hamburger">
+                <img src="img/more.png" alt="Menu Icon" class="hamburger-icon">
+                <img src="img/close.png" alt="Close Icon" class="hamburger-icon-open">
+            </label>
+
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#lit">Blog</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- the main contains important page content -->
+
+
+        <section id="hero">
+            <img src="img/avatar.png" alt="my avatar">
+
+
+
+            <div>
+                <p>Giorgi zeikidze</p>
+                <p>Tbilisi, Georgia</p>
+                <a href="https://www.instagram.com"><img id="insta" src="img/Instagram_logo_2016.svg.webp"
+                        alt="instagram logo"></a>
+                <a href="https://x.com/?lang=en"><img id="twitter" src="img/twitter.webp" alt="twitter logo"></a>
+                <a href="https://www.facebook.com/"><img id="facebook" src="img/vecteezy_facebook-png-icon_16716481.png"
+                        alt="facebook logo"></a>
+
+            </div>
+        </section>
+
+        <section id=bio>
+
+            <!-- biographical information -->
+            <h2>About me</h2>
+            <p>
+                i like music because it makes me happy and relaxed. Playing video games is so much fun since I am
+                introduced to various new worlds and challenges, Sports keep me fit and healthy. Even more, driving a
+                car is quite exciting; it keeps you free, enjoying the fun of being on the road.
+
+
+            </p>
+
+
+        </section>
+        <section id="hobbies">
+
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Drawing</li>
+                <li>Djing</li>
+                <li>Playing Games</li>
+                <li>Cyling</li>
+            </ul>
+
+
+        </section>
+
+        <section id="gallery">
+
+            <h2>My Gallery</h2>
+
+            <hr>
+            <figure>
+                <img src="img/dj-640w.jpg" alt="Dj set">
+                <figcaption>
+                    <h3>My Art</h3>
+                    <div>This is my art that i made it in 3d software Blender to create 3d models
+                        and then i used photoshop to merge two medias and i created this artwork.
+                    </div>
+                </figcaption>
+
+            </figure>
+
+            <hr>
+            <figure>
+                <img src="img/hardgroove-640w.jpg" alt="Dj set 2">
+                <figcaption>
+                    <h3>My Art</h3>
+                    <div>this is artwork for my dj set that i made, i also used blender 3d models and fused it with 2d
+                        media in photoshop the set is made out of hardgroove techno </div>
+                </figcaption>
+            </figure>
+
+            <hr>
+            <figure>
+                <img src="img/sets-640w.jpg" alt="image">
+                <figcaption>
+                    <h3>My Art</h3>
+                    <div> this is also another artwork that i made for my djing set its made in blender and photoshop
+                        the set is made out of italo disco music. </div>
+                </figcaption>
+            </figure>
+
+
+        </section>
+
+        <article id="lit">
+
+            <h2>Image Hover Effect</h2>
+
+            <div>
+                <p>
+                    Image hover effects are cool way to add interactivity and visual to your website. what image hover
+                    effect does is when user hovers mouse on the image it has slight animagion of popping out of the
+                    place. this animation can be made using css and it is fairly simple.
+                </p>
+
+                <h2>How to create Image Hover Effect</h2>
+
+                <p>Image hover effects are visual changes that happen when a user hovers their cursor over an image.
+                    those changes can be size change, color shift, added text or overlays. they can be achived by CSS
+                    pseudo classes primarily.</p>
+
+                <li>:hover</li>
+                <li>transform</li>
+                <li>opacity</li>
+                <li>filter</li>
+
+                <h2>How i used it in my project</h2>
+
+                <p> On the starting sections of my website there are different images of myself and my artworks all of
+                    them have hover effects. you can try to check out any image on the page to see the example of hover
+                    effect. </p>
+
+                <h2>Code example</h2>
+
+                <code>
+#gallery img {
+width: 100%;
+border-radius: 50px;
+box-shadow: 10px 10px 10px rgb(40, 150, 0);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+                    
+#gallery img:hover {
+transform: scale(1.02); 
+box-shadow: 15px 15px 15px rgb(71, 162, 29); 
+}
+                    
+    </code>
+
+            </div>
+
+        </article>
+
+
+
+
+
+        <section id="video">
+
+            <H2>My video</H2>
+
+            <div id="videoContainer">
+                <iframe id="myVideo" src="https://www.youtube.com/embed/Zsh63Bnez88?si=nrUe8lkJgbFMk20b"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <figcaption>this is first video of my channel </figcaption>
+
+        </section>
+
+        <section id="contact">
+
+
+
+            <form id="contactForm" netlify>
+                <fieldset>
+                    <legend>Contact form</legend>
+
+                    <div id="formElements">
+
+                        <!-- Name -->
+
+                        <label for="name">Name (Required)</label>
+                        <input type="text" id="name" name="name" required placeholder="Name">
+
+                        <!-- email -->
+
+                        <label for="email">Email (Required)</label>
+                        <input type="email" id="email" name="email" required placeholder="Email">
+
+                        <!-- phone -->
+
+                        <label for="phone">Phone (Required)</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone">
+
+                        <!-- phone type -->
+
+                        <label for="phonetype">Phone Type (Optional)</label>
+                        <select id="phonetype" name="phonetype">
+                            <option value="">Select phone type</option>
+                            <option value="Mobile">Mobile</option>
+                            <option value="Work">Work</option>
+                            <option value="Home">Home</option>
+                        </select>
+
+                        <!-- message -->
+
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" id="message" rows="8" placeholder="send text"></textarea>
+
+                        <!-- reply -->
+
+                        <fieldset>
+                            <legend>Would you like to reply?</legend>
+
+                            <ul>
+                                <li>
+                                    <input type="radio" id="message-yes" name="reply" value="Yes reply please">
+                                    <label for="message-yes"> Yes reply would be nice </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="message-no" name="reply" value="No reply please" checked>
+                                    <label for="message-no"> no thanks </label>
+                                </li>
+
+                            </ul>
+                        </fieldset>
+
+                        <!-- submit -->
+                        <button id="submit">Send</button>
+
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <footer>
+        &copy; 2024 Giorgi Zeikidze
+
+    </footer>
+
+
+
+
+</body>
+
+</html>

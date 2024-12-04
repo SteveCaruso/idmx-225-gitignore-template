@@ -1,0 +1,209 @@
+/* make scrolling smooth */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* 
+ get rid of padding & sizing on body so
+ header is at top
+*/
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* add some padding back to rest of page */
+
+main{
+    padding: 2vw;
+    
+}
+
+
+/* navbar */
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.navbar {
+    background: linear-gradient(270deg, #6e40bc, #9626c6, #5C2CB0); 
+    background-size: 300% 300%; 
+    animation: gradientMove 10s ease infinite; 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+
+
+
+/* logo */
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    min-width: 150px;
+    width: 5vw;
+}
+
+.logo h1{
+    font-size: 35px;
+    padding-left: 10px;
+}
+
+
+/* navigation list */
+
+.navbar li {
+    list-style: none;
+    display: block;
+    padding: 0.5em 0;
+}
+
+
+
+.navbar a{
+    color: whitesmoke;
+    
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.navbar a:hover,
+.navbar a:focus {
+    color: #5C2CB0;
+    background-color: white;
+    border-radius: 10px;
+    outline: none;
+}
+
+.navbar-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+/* hamburger */
+
+.menu-checkbox {
+    display: none;
+}
+
+
+.hamburger {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+
+.hamburger-icon {
+    display: block;
+    width: 30px;
+    height: 25px;
+}
+
+.hamburger-icon-open {
+    display: none; 
+    width: 30px;
+    height: 25px;
+}
+
+
+.menu-checkbox:checked + .hamburger .hamburger-icon {
+    display: none;
+}
+
+.menu-checkbox:checked + .hamburger .hamburger-icon-open {
+    display: block;
+}
+
+
+.navbar-links {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 1;
+}
+
+
+.menu-checkbox:checked ~ .navbar-links {
+    display: flex;
+}
+
+
+
+
+@media screen and (min-width: 60rem) {
+ 
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-links {
+        position: static;
+        display: flex;
+        align-items: flex-end !important;
+        height: auto;
+        background-color: transparent;
+    }
+
+  
+    .hamburger {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 60rem){
+
+
+ 
+.navbar{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a{
+    padding: 30px;
+}
+
+}
+
