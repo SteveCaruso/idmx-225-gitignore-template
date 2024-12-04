@@ -36,7 +36,7 @@ main{
 }
 
 .navbar {
-    background: linear-gradient(270deg, #6e40bc, #5c4782, #5C2CB0); 
+    background: linear-gradient(270deg, #6e40bc, #9626c6, #5C2CB0); 
     background-size: 300% 300%; 
     animation: gradientMove 10s ease infinite; 
     display: flex;
@@ -175,8 +175,7 @@ main{
     .navbar-links {
         position: static;
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        align-items: flex-end !important;
         height: auto;
         background-color: transparent;
     }

@@ -85,8 +85,7 @@ header {
     margin-bottom: 1rem;
     text-align: center;
     margin-top: 2rem;
-   
-    
+    font-size: 30px;
     
 }
 
@@ -176,7 +175,7 @@ figcaption div{
 
 #lit {
     background-color: #4edb1c;
-    font-size: 25px;
+    font-size: 30px;
     font-family: "Permanent Marker", cursive;
     color: black;
     
@@ -202,6 +201,26 @@ figcaption div{
     text-shadow: 1px 1px 1px black;
     box-shadow :1px 1px 1px black ;
     background-image: radial-gradient(white, #4ada5d);
+}
+
+#lit code {
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre-wrap;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+code:hover {
+    background-color: #e8ffe8;
+    transform: scale(1.02);
+    box-shadow: 0px 4px 10px rgba(0, 150, 0, 0.3);
 }
 
 
@@ -234,6 +253,9 @@ figcaption div{
     padding-right:10%;
     }
     
+    #bio{
+        font-size: 30px;
+    } 
 
     figure img {
         width: 100%;
@@ -241,11 +263,21 @@ figcaption div{
 
     #lit div{
         max-width: 100%;
-        columns: 20rem;
-        font-size: 70%;
+        font-size: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
 
     }
 
+    #lit h2{
+        text-align: center;
+    }
+    #lit li{
+        text-align: center;
+        
+    }
+
+    
     
 }
 @media screen and (min-width: 100em ){

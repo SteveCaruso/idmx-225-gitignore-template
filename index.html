@@ -30,15 +30,15 @@
                 <img src="img/1.png" alt="Logo of my page">
                 <h1>About Me</h1>
             </div>
-            
+
             <!-- nav bar with hamburger icon -->
             <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-            
+
             <label for="menu-toggle" class="hamburger">
                 <img src="img/more.png" alt="Menu Icon" class="hamburger-icon">
                 <img src="img/close.png" alt="Close Icon" class="hamburger-icon-open">
             </label>
-        
+
             <div class="navbar-links">
                 <ul>
                     <li><a href="#bio">Bio</a></li>
@@ -47,7 +47,7 @@
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
-        </nav>        
+        </nav>
     </header>
 
     <main>
@@ -58,7 +58,7 @@
         <section id="hero">
             <img src="img/avatar.png" alt="my avatar">
 
-            
+
 
             <div>
                 <p>Giorgi zeikidze</p>
@@ -77,7 +77,9 @@
             <!-- biographical information -->
             <h2>About me</h2>
             <p>
-                i like music because it makes me happy and relaxed. Playing video games is so much fun since I am introduced to various new worlds and challenges, Sports keep me fit and healthy. Even more, driving a car is quite exciting; it keeps you free, enjoying the fun of being on the road.
+                i like music because it makes me happy and relaxed. Playing video games is so much fun since I am
+                introduced to various new worlds and challenges, Sports keep me fit and healthy. Even more, driving a
+                car is quite exciting; it keeps you free, enjoying the fun of being on the road.
 
 
             </p>
@@ -110,7 +112,7 @@
                         and then i used photoshop to merge two medias and i created this artwork.
                     </div>
                 </figcaption>
-                
+
             </figure>
 
             <hr>
@@ -118,7 +120,8 @@
                 <img src="img/hardgroove-640w.jpg" alt="Dj set 2">
                 <figcaption>
                     <h3>My Art</h3>
-                    <div>this is artwork for my dj set that i made, i also used blender 3d models and fused it with 2d media in photoshop the set is made out of hardgroove techno </div>
+                    <div>this is artwork for my dj set that i made, i also used blender 3d models and fused it with 2d
+                        media in photoshop the set is made out of hardgroove techno </div>
                 </figcaption>
             </figure>
 
@@ -127,7 +130,8 @@
                 <img src="img/sets-640w.jpg" alt="image">
                 <figcaption>
                     <h3>My Art</h3>
-                    <div> this is also another artwork that i made for my djing set its made in blender and photoshop the set is made out of italo disco music. </div>
+                    <div> this is also another artwork that i made for my djing set its made in blender and photoshop
+                        the set is made out of italo disco music. </div>
                 </figcaption>
             </figure>
 
@@ -136,43 +140,48 @@
 
         <article id="lit">
 
-            <h2>Lorem Ipsum</h2>
+            <h2>Image Hover Effect</h2>
 
             <div>
-
-                <p>Had I been as attentive not to displease him as I ought to have been, I know not but this vigil
-                    might have been fulfilled; but I unluckily entered upon the controversy concerning the right of
-                    Great-Britain to tax America, and attempted to argue in favour of our fellow-subjects on the
+                <p>
+                    Image hover effects are cool way to add interactivity and visual to your website. what image hover
+                    effect does is when user hovers mouse on the image it has slight animagion of popping out of the
+                    place. this animation can be made using css and it is fairly simple.
                 </p>
 
-                <p>We were fatigued by the contest, which was produced by my want of caution; and he was not then in
-                    the humour to slide into easy and cheerful talk. It therefore so happened, that we were after an
-                    hour or two very willing to separate and go to bed.</p>
+                <h2>How to create Image Hover Effect</h2>
 
-                <p>On Wednesday, September 24, I went into Dr. Johnson's room before he got up, and finding that the
-                    storm of the preceding night was quite laid, I sat down upon his bed-side, and he talked with as
-                    much readiness and good-humour as ever.</p>
+                <p>Image hover effects are visual changes that happen when a user hovers their cursor over an image.
+                    those changes can be size change, color shift, added text or overlays. they can be achived by CSS
+                    pseudo classes primarily.</p>
 
-                <p>I spoke with gratitude of Dr. Taylor's hospitality; and, as evidence that it was not on account
-                    of his good table alone that Johnson visited him often, I mentioned a little anecdote which had
-                    escaped my friend's recollection</p>
+                <li>:hover</li>
+                <li>transform</li>
+                <li>opacity</li>
+                <li>filter</li>
 
-                <p>After breakfast I departed, and pursued my journey northwards. I took my post-chaise from the
-                    Green Man, a very good inn at Ashbourne, the mistress of which, a mighty civil gentlewoman,
-                    courtseying very low, presented me with an engraving of the sign of her house</p>
+                <h2>How i used it in my project</h2>
 
-                <p>M KILLINGLEY's duty waits upon Mr. Boswell, is exceedingly obliged to him for this favour;
-                    whenever he comes this way, hopes for a continuance of the same. Would Mr. Boswell name the
-                    house to his extensive acquaintance</p>
+                <p> On the starting sections of my website there are different images of myself and my artworks all of
+                    them have hover effects. you can try to check out any image on the page to see the example of hover
+                    effect. </p>
 
-                <p>I cannot omit a curious circumstance which occurred at Edensor-inn, close by Chatsworth, to
-                    survey the magnificence of which I had gone a considerable way out of my road to Scotland. The
-                    inn was then kept by a very jolly landlord, whose name, I think, was Malton. He happened to
-                    mention that 'the celebrated Dr. Johnson had been in his house.</p>
+                <h2>Code example</h2>
 
-                <p>My friend, who had a thorough dependance upon the authenticity of my relation without any
-                    EMBELLISHMENT, as FALSEHOOD or FICTION is too gently called, laughed a good deal at this
-                    representation of himself.</p>
+                <code>
+#gallery img {
+width: 100%;
+border-radius: 50px;
+box-shadow: 10px 10px 10px rgb(40, 150, 0);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+                    
+#gallery img:hover {
+transform: scale(1.02); 
+box-shadow: 15px 15px 15px rgb(71, 162, 29); 
+}
+                    
+    </code>
 
             </div>
 
@@ -187,7 +196,10 @@
             <H2>My video</H2>
 
             <div id="videoContainer">
-               <iframe id="myVideo" src="https://www.youtube.com/embed/Zsh63Bnez88?si=nrUe8lkJgbFMk20b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe id="myVideo" src="https://www.youtube.com/embed/Zsh63Bnez88?si=nrUe8lkJgbFMk20b"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
             <figcaption>this is first video of my channel </figcaption>
@@ -196,7 +208,7 @@
 
         <section id="contact">
 
-            
+
 
             <form id="contactForm" netlify>
                 <fieldset>

@@ -33,6 +33,27 @@ This is the About Me Web page dedicated to my artwork and myself. In this projec
 
 ## Citation
 
+Logo design
+https://www.canva.com
+
+Backgroun image
+Sky at night By Narong 
+https://stock.adobe.com/images/Sky-at-night/234502367?as_content=tineye_match&clickref=1100lzSpbuEJ&mv=affiliate&mv2=pz&as_camptype=domain&as_channel=affiliate&as_source=partnerize&as_campaign=tineye
+
+Gallery images
+By Giorgi Zeikidze
+https://www.instagram.com/bloppy.flv/
+
+Youtube video
+By Giorgi Zeikidze
+https://youtu.be/Zsh63Bnez88
+
+Blog citation
+https://developer.mozilla.org/en-US/docs/Web/CSS/:hover
+https://www.w3schools.com/cssref/sel_hover.php
+https://ianlunn.github.io/Hover/
+
+
 ## License
 
  License and copyright notice
