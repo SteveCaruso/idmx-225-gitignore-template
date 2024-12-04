@@ -145,14 +145,58 @@
       <article id="lit">
         <h2>Image Hover Effect</h2>
           <div>
-            <p>"Convinced that something was amiss with him, she rushed down the steps--for the house was none other than the opium den in which you found me to-night--and running through the front room she attempted to ascend the stairs which led to the first floor. At the foot of the stairs, however, she met this Lascar scoundrel of whom I have spoken, who thrust her back and, aided by a Dane, who acts as assistant there, pushed her out into the street. Filled with the most maddening doubts and fears, she rushed down the lane and, by rare good-fortune, met in Fresno Street a number of constables with an inspector, all on their way to their beat. The inspector and two men accompanied her back, and in spite of the continued resistance of the proprietor, they made their way to the room in which Mr. St. Clair had last been seen. There was no sign of him there. In fact, in the whole of that floor there was no one to be found save a crippled wretch of hideous aspect, who, it seems, made his home there. Both he and the Lascar stoutly swore that no one else had been in the front room during the afternoon. So determined was their denial that the inspector was staggered, and had almost come to believe that Mrs. St. Clair had been deluded when, with a cry, she sprang at a small deal box which lay upon the table and tore the lid from it. Out there fell a cascade of children's bricks. It was the toy which he had promised to bring home.</p>
+            <p>CSS (Cascading Style Sheets) is a powerful and essential language used to control the presentation and styling of web pages. It defines how elements such as text, images, buttons, and containers should appear on the screen. CSS not only allows designers to control the layout, font sizes, colors, and margins but also provides ways to add interactive effects like hover animations. One of the many hover effects that I will talk about is the image flip effect, which creates an engaging user interaction by flipping an image or an element when the user hovers over it with their mouse pointer. The flip effect gives the illusion of a 3D transformation, making the image or content rotate and reveal the back side, similar to flipping a physical card.
+            </p>
 
-            <p>"This discovery, and the evident confusion which the cripple showed, made the inspector realise that the matter was serious. The rooms were carefully examined, and results all pointed to an abominable crime. The front room was plainly furnished as a sitting-room and led into a small bedroom, which looked out upon the back of one of the wharves. Between the wharf and the bedroom window is a narrow strip, which is dry at low tide but is covered at high tide with at least four and a half feet of water. The bedroom window was a broad one and opened from below. On examination traces of blood were to be seen upon the windowsill, and several scattered drops were visible upon the wooden floor of the bedroom. Thrust away behind a curtain in the front room were all the clothes of Mr. Neville St. Clair, with the exception of his coat. His boots, his socks, his hat, and his watch--all were there. There were no signs of violence upon any of these garments, and there were no other traces of Mr. Neville St. Clair. Out of the window he must apparently have gone for no other exit could be discovered, and the ominous bloodstains upon the sill gave little promise that he could save himself by swimming, for the tide was at its very highest at the moment of the tragedy.</p>
+            <p>In this report, I will explain how I apply a hover effect using the flip effect on an image. The flip effect is a dramatic and visually appealing animation that rotates an element along the Y-axis, showing one side initially and revealing a second image or content when the user hovers over it. This effect creates a sense of depth, making it look like the element is being flipped in 3D space. The implementation involves using HTML and CSS, particularly using CSS properties like transform, perspective, transition, and backface-visibility.
+            </p>
 
-            <p>"And now as to the villains who seemed to be immediately implicated in the matter. The Lascar was known to be a man of the vilest antecedents, but as, by Mrs. St. Clair's story, he was known to have been at the foot of the stair within a very few seconds of her husband's appearance at the window, he could hardly have been more than an accessory to the crime. His defence was one of absolute ignorance, and he protested that he had no knowledge as to the doings of Hugh Boone, his lodger, and that he could not account in any way for the presence of the missing gentleman's clothes.</p>
+            <h4>On HTML,</h4>
 
-            <p>"So much for the Lascar manager. Now for the sinister cripple who lives upon the second floor of the opium den, and who was certainly the last human being whose eyes rested upon Neville St. Clair. His name is Hugh Boone, and his hideous face is one which is familiar to every man who goes much to the City. He is a professional beggar, though in order to avoid the police regulations he pretends to a small trade in wax vestas. Some little distance down Threadneedle Street, upon the left-hand side, there is, as you may have remarked, a small angle in the wall. Here it is that this creature takes his daily seat, cross-legged with his tiny stock of matches on his lap, and as he is a piteous spectacle a small rain of charity descends into the greasy leather cap which lies upon the pavement beside him. I have watched the fellow more than once before ever I thought of making his professional acquaintance, and I have been surprised at the harvest which he has reaped in a short time. His appearance, you see, is so remarkable that no one can pass him without observing him. A shock of orange hair, a pale face disfigured by a horrible scar, which, by its contraction, has turned up the outer edge of his upper lip, a bulldog chin, and a pair of very penetrating dark eyes, which present a singular contrast to the colour of his hair, all mark him out from amid the common crowd of mendicants and so, too, does his wit, for he is ever ready with a reply to any piece of chaff which may be thrown at him by the passers-by. This is the man whom we now learn to have been the lodger at the opium den, and to have been the last man to see the gentleman of whom we are in quest."</p>
+            <img src="img/html-hover-effect.png" alt="html example">
+
+            <p>
+            <br>I create a container for the flip effect: The container is given a class of flip-effect, and it will hold the entire flip animation. Then, I added a "flipper" element inside the container: This is the element that will perform the flipping animation when hovered. The flipper element wraps around the front and back sides of the image or content. Then, Inside the flipper, I create two sides: One side will be the "front," which is visible initially, and the other side will be the "back," which will become visible after the flip. Lastly, I add images to both the front and back sides: The front and back divs will each contain an image. These images will be shown when the respective side is facing the viewer.
+            </p>
+
+            <h4>Moving on to CSS,</h4>
+
+            <img src="img/css-flip-effect.png" alt="css example for flip-effect container">
+
+          <p>
+            <br>To begin, I style the flip-effect container with * (to all elements,) and inside that, I set padding to zero to very important.<br>
+              
+            <br>Then, I style the flip-effect container: I set the width and height of the   container to define the size of the image. The perspective property is a key for 3D effects. I set it to 1000px, which gives the illusion of depth when the element rotates. <br>
+          </p>
+
+            <img src="img/css-flipper.png" alt="css example for flipper element">
+              
+          <p>
+            <br>Third, I style the flipper element: I added a transition property to create a smooth animation. The transition duration is set to 0.7s, meaning the flip will take 0.7 seconds to complete. The transform-style property is set to preserve-3d to maintain the 3D effect while the element is rotating. I set the position to relative to ensure the "flipper" element is positioned correctly inside the container.<br>
+          </p>
+
+            <img src="img/css-hover-front-and-back.png" alt="css example for hover, back and front">
+
+          <p>
+            <br>Fourth, I create the flip effect on hover: I used the :hover pseudo-class to detect when the user hovers over the .flip-effect container. Inside that, I set the transform to be rotated the Y-axis by 180deg which creates the flip effect. <br>
+            
+            <br>Fifth, I style the front and back sides: I set both the front and back sides to be given a position: absolute so that they can be positioned on top of each other inside the "flipper." Then, I set the width and height to 100% to make both sides cover the entire container area. And, set the backface-visibility to hidden so, that the image will the back side of the image when it’s flipped away. <br>
+            
+            <br>Lastly, I style the back side of the flip which is similar to the third step. I set the back side to rotate the Y-axis by 180deg, so it is initially hidden behind the front side. When the flip effect is triggered, the back side becomes visible.
+          </p>
+            
+            
+            
+
+            <h5>Here is animation</h5>
           </div>
+
+          <div class="flip-effect">
+            <div class="flipper">
+                <div class="front"><img src="img/front-img.png" width="500px" alt="A front img"></div>
+                <div class="back"><img src="img/back-img.png" width="500px" alt="A back img"></div>
+            </div>
+        </div>
 
       </article>
 
@@ -161,7 +205,6 @@
 
       <section id="video">
 
-        
         <h2>A Short Video:</h2>
 
         <div id="videoContainer">
@@ -170,13 +213,14 @@
           width="560" height="315" src="https://www.youtube.com/embed/HGQzVrG2PGg?si=_HMWV00y9m9t3fKJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
         </div>
-        
-
-        
 
       </section>
 
+      <hr>
+
       <section id="contact">
+        
+      
 
         <h2>Contact Us:</h2>
 
@@ -188,25 +232,25 @@
             <div id="formElements">
 
               <!-- Name -->
-              <label for="name">Name</label> 
+              <label for="name">Name (required)</label> 
               <input type="text" id="name" name="name" required>
 
               <!-- Email -->
-              <label for="email">Email </label> 
+              <label for="email">Email (required)</label> 
               <input type="email" id="email" name="email" required>
 
               <!-- Phone -->
-              <!-- <label for="phone">Phone (optional)</label> 
-              <input type="tel" id="phone" name="phone"> -->
+              <label for="phone">Phone (optional)</label> 
+              <input type="tel" id="phone" name="phone">
 
               <!-- Phone type -->
-              <!-- <label for="phonetype">Phone type (optional)</label>
+              <label for="phonetype">Phone type (optional)</label>
               <select id="phonetype" name="phonetype"> 
                 <option value="" selected>Select phone type</option>
                 <option value="Mobile">Mobile</option>
                 <option value="Work">Work</option>
                 <option value="Home">Home</option>
-              </select> -->
+              </select>
 
               <!-- Message -->
               <label for="message">Message</label>
