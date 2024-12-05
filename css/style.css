@@ -242,6 +242,7 @@ h2 {
     background-color: #3D5A73; /* Slightly darker blue on hover */
 }
 
+/* Contact Screen if screen is max-wdith 768 pixels */
 @media screen and (max-width: 768px) {
     #contact {
         padding: 1rem;
@@ -261,6 +262,7 @@ h2 {
     }
 }
 
+/* Contact Screen if screen is min-width 1024 pixels */
 @media screen and (min-width: 1024px) {
     #contact {
         max-width: 800px;
@@ -274,6 +276,10 @@ h2 {
     #formElements button[type="submit"] {
         grid-column: 1 / -1;
         justify-self: center;
+    }
+
+    #contact fieldset {
+        grid-column: 1 / 3;
     }
 }
 
@@ -362,4 +368,35 @@ h2 {
     #gallery figure:first-of-type {
         border-left:none !important;
     }
+}
+
+/* Toggle Button */
+.toggle-button {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color:#FDE74C;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .toggle-button {
+        display: block;
+        align-self: flex-end;
+        position: absolute;
+        top: 44px;
+        right: 10px;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
 }
