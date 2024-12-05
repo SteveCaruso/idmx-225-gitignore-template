@@ -92,6 +92,7 @@ footer {
 }
 
 #bio div p {
+    font-size: 18px;
     padding: 0;
     margin-top: 0;
     clear: both;
@@ -206,7 +207,7 @@ figure img {
 }
 
 #lit div p {
-    font-size: 20px;
+    font-size: 18px;
     padding: 0;
     margin-top: 0;
     clear: both;
