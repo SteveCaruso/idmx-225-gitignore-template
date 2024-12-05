@@ -18,7 +18,7 @@ In this section, I learned how to use the img element to embed images into a web
 
 ## Bio (About Me)
 
-This section taught me how to style headings individually. I learned how to adjust their sizes, fonts, and margins.
+This section taught me how to style headings individually and how to adjust their sizes, fonts, and margins.
 
 
 ## Gallery (My Artwork)
