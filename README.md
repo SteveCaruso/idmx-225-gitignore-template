@@ -13,12 +13,12 @@ I learned how to create a responsive navigation bar using only CSS, which involv
 
 ## Hero (Main)
 
-In this section, I learned how to use the <img> element to embed images into a webpage. I also learned about <p> element for writing paragraphs and how to apply CSS classes to <p> elements to customize individual paragraphs separately.
+In this section, I learned how to use the img element to embed images into a webpage. I also learned about p element for writing paragraphs and how to apply CSS classes to p elements to customize individual paragraphs separately.
 
 
 ## Bio (About Me)
 
-This section taught me how to style headings individually. I learned how to adjust their sizes, fonts, and margins. 
+This section taught me how to style headings individually. I learned how to adjust their sizes, fonts, and margins.
 
 
 ## Gallery (My Artwork)
