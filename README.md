@@ -25,7 +25,7 @@
 
 ## Color Scheme
 
-<img src="img/AdobeColor-MyAboutMeTheme.jpeg" width="500" height="500" alt="Color Scheme from AdobeColor"/>
+<img src="img/AdobeColor-MyAboutMeTheme.jpeg" width="500" height="800" alt="Color Scheme from AdobeColor"/>
 
 ## Citation
 
