@@ -171,16 +171,111 @@ h2 {
     margin-bottom: 1rem;
 }
 
-/* Contact Section */
+/* Contact Form Section */
 #contact {
     font-family: "Josefin Sans", sans-serif;
+    padding: 2rem;
+    background-color: #FDE74C;
+    color: #5B7C99; 
+    border: 2px solid #5B7C99;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+#contact fieldset{
+    border: 2px solid #5B7C99;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #E5E9EC; /* Slight contrast */
+}
+
+#contact legend {
+    font-size: 1.5rem;
+    color: #5B7C99;
+    padding: 0 1rem;
 }
 
 #formElements {
     display: grid;
+    gap: 1rem;
 }
 
+#formElements input, #formElements select, #formElements textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #5B7C99;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
 
+#formElements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+#formElements ul li {
+    display: flex;
+    align-items: center;
+}
+
+#formElements ul li input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+#formElements button[type="submit"] {
+    background-color: #5B7C99;
+    color: #FDE74C;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formElements button[type="submit"]:hover {
+    background-color: #3D5A73; /* Slightly darker blue on hover */
+}
+
+@media screen and (max-width: 768px) {
+    #contact {
+        padding: 1rem;
+    }
+
+    #formElements {
+        gap: 0.5rem;
+    }
+
+    #formElements input, #formElements select, #formElements textarea {
+        font-size: 0.9rem;
+    }
+
+    #formElements button[type="submit"] {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #contact {
+        max-width: 800px;
+    }
+    
+    #formElements {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    #formElements button[type="submit"] {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+}
 
 @media screen and (min-width: 60em) {
     
