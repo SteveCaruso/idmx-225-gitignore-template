@@ -36,14 +36,14 @@ Gallery Section Hover Effect and an Icon
 Hamburger Bar/Nav Bar on Header 
 - https://www.youtube.com/watch?v=SIzi9z8mrTk
 
-Ps. I also use the same two icons from the Video
+<sub> Ps. I also use the same two icons from the Video </sub>
 
 Add Link within an Icon and an Icon on the footer
 - https://www.youtube.com/watch?v=HA6bByKdAQM&list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s 
 - https://www.w3schools.com/html/html_links.asp
 - https://icons.getbootstrap.com/icons/github/
 
-Ps. I also use the same concept to link a section in Gallery section
+<sub> Ps. I also use the same concept to link a section in Gallery section </sub>
 
 Quote on Hero section
 - https://www.laurajaworski.com/single-post/60-quotes-about-art-creativity-by-author-laura-jaworski 
