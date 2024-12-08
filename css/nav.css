@@ -1,0 +1,172 @@
+/* make scrolling smooth */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* 
+ get rid of padding & sizing on body so
+ header is at top
+*/
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* add some padding back to rest of page */
+
+main {
+    padding: 2vw;
+}
+/* navbar */
+
+.navbar {
+    background-color: palevioletred;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;  
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+/* logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 7vw;
+    width: 7vw;
+
+}
+.logo h1 {
+    font-size: 1.2em;
+}
+/* navigation list */
+
+/* Navbar Links */
+
+.navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar-links li {
+    list-style: none;
+    display: block;
+    padding: 0.5em 0;
+}
+
+.navbar-links ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links ul li {
+    margin-left: 20px;
+}
+
+/*  
+ style all a tags in header 
+ and then on hover
+*/
+.navbar-links a {
+    color:whitesmoke;
+    background-attachment: black;
+    font-size: 2rem;
+    padding: 1rem 1.25rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar-links a:hover,
+.navbar-links a:focus {
+    filter: invert(1);
+    border-radius: 10px;
+    outline: none;
+}
+
+
+/* 
+media query for non-mobile nav bar
+min-width set to width of nav elements 
+such that no text wraps 
+*/
+
+@media screen and (min-width: 60rem) {
+
+    .navbar-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: flex-end;
+        
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* Hamburger Icon for Mobile */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Mobile View - When screen size is less than 768px */
+@media (max-width: 767px) {
+    .navbar-links {
+        display: none; /* Hide the menu by default */
+        width: 100%;
+        text-align: center;
+        background-color: #FFB6C1;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        padding: 20px;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: block; /* Show the hamburger icon on mobile */
+    }
+
+    .navbar-links.active {
+        display: flex; /* Show the menu when active */
+    }
+}
+
+/* Active Class for Navbar Links */
+.navbar-links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

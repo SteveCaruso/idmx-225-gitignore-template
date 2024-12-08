@@ -1,0 +1,333 @@
+body{
+   background-color:lightpink;
+   font-family: Bitter, "Times New Roman", serif;
+}
+
+/* Mobile-first approach */
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #FFB6C1;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .navbar-links ul li {
+        margin-bottom: 1em;
+    }
+
+    .hero img {
+        width: 80%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+/* iPad/Tablet (landscape) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-links ul {
+        display: flex;
+    }
+
+    .navbar-links ul li {
+        margin-left: 20px;
+    }
+
+    .hero img {
+        width: 60%;
+    }
+}
+
+/* Desktop and larger screens */
+@media (min-width: 1025px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-links ul {
+        display: flex;
+    }
+
+    .navbar-links ul li {
+        margin-left: 30px;
+    }
+
+    .hero img {
+        width: 50%;
+    }
+}
+
+
+header{
+    text-align: center;
+    color: white;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Oswald, Impact, sans-serif; 
+    text-align: center;
+    font-size: 60pt;
+}
+h1 {
+    font-size: 60pt;
+    text-align: center;
+}
+#hero, footer {
+    text-align: center;
+    background-color: #e0779f;
+    text-size-adjust: 30pt;
+    color: white;
+    padding: 30px;
+    border: 10px outset palevioletred; 
+    border-radius: 40px;
+}
+
+/* Hero Section */
+
+#hero img {
+width: 300px; 
+}
+
+/* Gallery Hover Effect */
+#gallery figure img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#gallery figure img:hover {
+    transform: scale(1.05); /* Slightly enlarge the image */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+
+/* Bio Section */ 
+
+#bio, #me{
+    text-align: center;
+    color: rgb(104, 40, 40);
+    font: size 30pt;
+    text-align: center;
+    border: 10px outset lightblue; 
+}
+
+#bio {
+    text-align: center;
+    font-size: 30pt;
+}
+
+/* Hobbies Section */ 
+
+#hobbies ul li:nth-child {
+    color: rgb(104, 40, 40);
+    text-align: center;
+    font-size: 30pt;
+ 
+}
+
+#hobbies {
+    text-align: center;
+    font-size: 30pt;
+    color: rgb(104, 25, 25);
+    border: 10px outset palevioletred; 
+}
+/* Gallery Section */ 
+
+#gallery {
+    text-align: center;
+    color: rgb(104, 25, 25);
+    padding: 30px;
+    border: 30px outset lightblue;
+    border-radius: 50px;
+}
+
+#gallery img {
+    max-width:100%; 
+    text-align: left;
+    color: rgb(104, 25, 25);
+    
+}
+
+#gallery figure {
+    text-align: left;
+    color: rgb(104, 25, 25);
+    font-size: 30pt;
+}
+
+#gallery figcaption {
+    text-align: center;
+    color: rgb(104, 25, 25);
+    font-size: 30pt;
+}
+
+/* Literature */
+#lit {
+    border: 30px outset palevioletred; 
+    margin-bottom: 2 rem;
+    color: rgb(104, 25, 25);
+    text-size-adjust: 50pt;
+
+
+}
+
+#lit div {
+    padding: 30px; 
+    max-width: 40em;
+    margin: 0 auto; 
+}
+
+#lit div p {
+    padding:0.3rem 0;
+    clear:both;
+}
+
+#lit div p:first-child:first-letter {
+    color: rgb(104, 25, 25);
+    background-image: radial-gradient(lightblue);
+    float:left;
+    font-size:3em;
+    padding: 0.25em;
+    margin-right: 0.25em;
+    line-height: 0.65em; 
+    border: 4px solid palevioletred; 
+    font-family:cursive; 
+    text-shadow: 5px 5px 3px yellow (0,0,0,.5); 
+}
+
+/* CSS Animation: Bounce Example */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    margin: 30px auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+
+.box:hover {
+    animation: bounce 1s ease-in-out infinite;
+}
+ 
+/* CSS Sprite Icons */
+.icon {
+    width: 50px;
+    height: 50px;
+    background-image: url('sprite.png'); /* Replace with your sprite image */
+    display: inline-block;
+    margin: 10px;
+}
+
+.icon-home {
+    background-position: 0 0; /* Position of the home icon */
+}
+
+.icon-search {
+    background-position: -50px 0; /* Position of the search icon */
+}
+
+.icon-settings {
+    background-position: -100px 0; /* Position of the settings icon */
+}
+
+.icon:hover {
+    opacity: 0.8; /* Hover effect to make the icons interactive */
+}
+
+/* Video */ 
+
+
+#videoContainerContainer {
+    max-width: 100%;
+    width: 700px;
+    margin-left: auto;
+    margin-right:auto;
+    padding-bottom:5rem;
+
+}
+
+#videoContainer {
+    position:relative;
+    overflow:hidden;
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:56.25%; /* 16:9 = 56.25% 
+                        4:3 = 75%
+                        */ 
+}
+
+#myVideo {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%; 
+    height:100%;
+}
+
+/* Contact Form*/
+
+#formElements {
+    display:grid;
+    row-gap:.5em;
+}
+
+#contact {
+    padding: 1rem;
+    max-width:600px;
+    margin: 2rem auto;
+}
+#fieldset {
+    border: 2px solid lightblue;
+    margin-top:1em;
+    margin-bottom:auto;
+    border-radius:2rem;
+}
+
+legend {
+    background-color: lightblue;
+    color: black;
+    padding:.5em;
+}
+
+#contact input, #contact textarea, #contact select, #contact button {
+    padding: 0.5em;
+    font-size:1rem;
+}
+#contact ul {
+    list-style:none;
+    padding:0px;
+}
+
+#contact li {
+    margin:1rem;
+}
+#contact button {
+    background-color:lightblue;
+    color:black;
+    border:1px solid palevioletred;
+    max-width:400px;
+    width:50%;
+    justify-self: center;
+
+}

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css"> 
+<link rel="stylesheet" href="css/nav.css"> 
+<link rel="icon" href="Img/logo.png" type="image/png+xml">
+
+</head>
+
+<body>
+
+    <!--The body tag is where all the stuff is shsown to the user.-->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Img/logo.png" class="log-img" alt="Your Logo" />
+                <h1 class="logo-title">Web Dev I - Online!</h1>
+            </div>
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- Hamburger icon -->
+            </div>
+            <div class="navbar-links" id="navbar-links">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#bio">About</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#lit">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- JavaScript -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navbarLinks = document.getElementById('navbar-links');
+
+        hamburger.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active');
+        });
+    </script>
+
+    <main>
+
+        <!--The main contains important page content. -->
+
+        <section id="hero">
+        <img src="Img/The-pierre.png" alt=" image of me">
+        <div>
+            <p>Mari Modebadze</p>
+            <P>Country Georgia </P>
+            <img src="Img/Country_Georgia.png">
+        </div>
+    </section>
+    
+
+    <section id="bio">
+        <h2>Biography</h2>
+        <p>I am a passionate individual with a love for technology and the arts. 
+            I have always had a deep interest in both the creative and technical 
+            aspects of life, which led me to pursue a career in web development. 
+            My goal is to combine my skills in programming with my creativity to 
+            build useful and beautiful websites.</p>
+        <p>In addition to my interest in web development, I am deeply committed 
+            to personal growth and learning. I am constantly seeking new opportunities 
+            to expand my knowledge and improve my skill set. I enjoy exploring new technologies, 
+            staying updated with industry trends, and experimenting with new tools.</p>
+        <p>Outside of programming, I have many hobbies that keep me engaged and 
+            inspired. Whether it’s painting, cooking, or working out, I always find time 
+            for my passions. I strongly believe in maintaining a balance between work and personal 
+            life, which helps me stay focused and energized.</p>
+        <ul>
+            <li>I want to be a pilot</li>
+            <li>Travel all 7 continents</li>
+            <li>Work in computer programming</li>
+        </ul>
+    </section>
+    
+
+    <section id="hobbies">
+        <h2>Hobbies:</h2>
+        <p>When I am not working as a manager of a resturant, I enjoy spending my time exploring creative outlets and staying active. Below is a list of my favorite hobbies:</p>
+        <ul>
+            <li>Painting</li>
+            <li>Working out</li>
+            <li>Cooking</li>
+            <li>Sewing</li>
+            <li>Shopping</li>
+            <li>Riding horses</li>
+            <li>Woodworking</li>
+        </ul>
+    </section>
+    
+
+    <Section id="me">
+        <p>About me...</p>
+        <ul>
+            <li> I speak 3 languages and in the process of learning: Italian, polish and french.</li>
+            <li>I was raised in Country Goergia by my grandparents. Long story short when I was 
+                born my parents weren't ready to raise me so they sent me to live with my grandparents 
+                for 7 years; that explains my accent. </li>
+            <li>I am a pretty skilled painter. </li>
+
+        </ul>
+
+    </Section>
+
+    <section id="gallery">
+
+        <h2>Photo Gallery</h2>
+
+        <hr>
+
+        <figure>
+            <img src="Img/White-Horse-640w.jpg"
+            alt="Riding a white horse.">
+            <figcaption>Riding a white hourse in my town.</figcaption>
+        </figure>
+
+        <hr>
+
+        <figure>
+            <img src="Img/Dance-Acharuli-640w.jpg"
+            alt="Cultural Georgian dance."
+            <figcaption>Choreographed by my cousin a cultural dance Acharuli.</figcaption>
+        </figure>
+
+        <hr>
+
+        <figure>
+            <img src="Img/Snowy-mountain-640w.jpg"
+            alt="The mountains."
+            <figcaption>Snowy mountains in the summer.</figcaption>
+        </figure>
+
+    </section>
+
+    <article id="lit">
+
+        <h2>Background of Country Georgia</h2>
+
+        <div>
+            <p>In the verdant embrace of the Caucasus, Georgia dances between 
+                ancient mountains and vibrant valleys, where the whispers of history 
+                intertwine with the melodies of folk songs. The flavors of khachapuri 
+                swirl through the air, as traditions unfold beneath the watchful gaze 
+                of the sun-drenched vineyards, each grape a silent witness to the tales
+                 of resilience and creativity. With every corner, a tapestry of cultures 
+                 weaves its way into the soul of this land, painting a portrait of both 
+                 unity and diversity, much like the intricate patterns of a traditional 
+                 Georgian carpet.</p> <p>As the rivers flow like the stories of the past,
+                Tbilisi emerges as a kaleidoscope of architecture, where the old an new collide 
+                in a harmonious cacophony. The Sulphur baths steam with the secrets of centuries, 
+                inviting travelers to soak in the warmth of hospitality and tradition. From the 
+                rustic charm of the cobbled streets to the lively squares filled with laughter, 
+                Georgia’s capital embodies a spirit that transcends time, as if each stone were 
+                infused with the heartbeat of its people, echoing the rhythms of life.</p> 
+                <p>In the realm of folklore, the tales of the heroes of ancient epics leap 
+                from the pages, their valor resonating like the strum of a lute in the 
+                twilight. Mountains loom like guardians, sheltering secrets of the past 
+                 while offering breathtaking vistas that inspire both poets and wanderers alike.
+                 The paradox of modernity and tradition dances in festivals that celebrate the 
+                 harvest, the seasons, and the very essence of being, where laughter mingles 
+                with the clinking of glasses filled with the finest wines, each sip a tribute to
+                 the land’s rich heritage.</p> <p>On the horizon, the shadow of the Great Caucasus 
+                stands tall, a sentinel of nature’s artistry, inviting adventurers to explore its 
+                trails. The flora and fauna tell a story of biodiversity, each species a brushstroke 
+                on the canvas of existence, as the air is thick with the scent of wildflowers and pine. 
+                As the sun sets, painting the sky in hues of orange and purple, the rhythm of life in Georgia 
+                continues, a testament to the unyielding spirit of a people who cherish their roots while 
+                reaching for the stars.</p> <p>Ultimately, the essence of Georgia lies not just in its 
+                landscapes or traditions but in the warmth of its people, who greet strangers with open arms 
+                and a song in their hearts. Each smile is a reminder that within the chaos of life, there 
+                exists a harmony that binds us all together, transcending borders and languages. As the stories
+                unfold like petals of a blooming flower, Georgia remains a timeless muse, an eternal canvas painted 
+                with the colors of joy, sorrow, and the undeniable magic of existence.</p>
+
+
+        </div>
+
+    </article>
+
+    <article id="lit">
+        <h2>Understanding CSS Animations: Adding Life to Your Web Pages</h2>
+        <div>
+            <p>
+                CSS animations are one of the most exciting tools in web design. They allow designers to create 
+                dynamic, engaging effects without the need for JavaScript. By simply manipulating CSS properties over 
+                time, you can add smooth transitions, subtle effects, or complex animations that give your website an extra 
+                layer of interactivity and fun. In this blog post, we will explore the basics of CSS animations, how to implement 
+                them, and some best practices for using them effectively.
+            </p>
+    
+            <h3>What is CSS Animation?</h3>
+            <p>
+                A CSS animation lets you gradually change from one set of CSS styles to another. CSS animations are 
+                made up of two key components:
+            </p>
+            <ul>
+                <li><strong>Keyframes:</strong> These define the states or steps of the animation.</li>
+                <li><strong>Animation Properties:</strong> These control the duration, timing, and other aspects of the animation.</li>
+            </ul>
+    
+            <h3>Creating a Basic Animation</h3>
+            <p>
+                To create a CSS animation, we use the <code>@keyframes</code> rule to define the animation sequence. Here's a simple example of 
+                a "bounce" animation applied to a div element:
+            </p>
+            
+            <pre>
+                <code>
+    @keyframes bounce {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-30px); }
+      100% { transform: translateY(0); }
+    }
+    
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #4CAF50;
+      animation: bounce 1s ease-in-out infinite;
+    }
+                </code>
+            </pre>
+    
+            <p>
+                In this example, the `.box` element will bounce up and down. The <code>@keyframes</code> rule defines the animation steps at 0%, 
+                50%, and 100%. The <code>animation</code> property is then used to apply the animation to the element.
+            </p>
+    
+            <h3>Using CSS Animation on Hover</h3>
+            <p>
+                One popular use of CSS animations is triggering them on hover. This is an easy way to add interactive effects to buttons, images, 
+                or other elements. For example, let's make a button scale up slightly when hovered:
+            </p>
+    
+            <pre>
+                <code>
+    button:hover {
+      animation: scaleUp 0.3s forwards;
+    }
+    
+    @keyframes scaleUp {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.2);
+      }
+    }
+                </code>
+            </pre>
+    
+            <h3>Best Practices for Using CSS Animations</h3>
+            <p>
+                While CSS animations are fun and effective, it's important to use them sparingly to avoid overwhelming users with too many moving elements. 
+                Here are some tips:
+            </p>
+            <ul>
+                <li><strong>Keep it subtle:</strong> Small, gentle animations can create a more polished look.</li>
+                <li><strong>Performance matters:</strong> Avoid animating properties that trigger layout recalculations, such as <code>width</code> or <code>height</code>.</li>
+                <li><strong>Use easing functions:</strong> To make animations feel more natural, use easing functions like <code>ease-in</code>, <code>ease-out</code>, or <code>ease-in-out</code>.</li>
+            </ul>
+    
+            <h3>Visual Example: Bouncing Box</h3>
+            <p>
+                Below is an example of a simple bouncing box animation applied to an element. Hover over the box to see the animation in action:
+            </p>
+            
+            <div class="box"></div>
+    
+            <p>As you can see, the box bounces when hovered over, demonstrating the effect of the keyframes and animation properties.</p>
+        </div>
+    </article>
+    
+    <article id="lit">
+        <h2>Optimizing Web Performance with CSS Sprites</h2>
+        <div>
+            <p>
+                As web pages become more complex and image-heavy, the need to optimize website performance grows. One of the most 
+                effective methods to reduce the number of HTTP requests and improve page load times is using CSS sprites. 
+                A CSS sprite is a single image that contains multiple smaller images, and CSS is used to display only a portion of it. 
+                This technique is widely used for icons, logos, buttons, and other UI elements that appear throughout a website.
+            </p>
+    
+            <h3>What is a CSS Sprite?</h3>
+            <p>
+                A CSS sprite is a technique where multiple images are combined into one larger image. This large image is then 
+                sliced up in the CSS using background positioning. This technique reduces the number of HTTP requests because 
+                instead of loading multiple image files, only one file is requested from the server.
+            </p>
+    
+            <h3>Why Use CSS Sprites?</h3>
+            <p>
+                The main benefit of CSS sprites is performance. Websites often use several small images such as icons or buttons 
+                that are repeated across different pages. By combining these images into one file, we can significantly reduce 
+                the number of requests sent to the server. This results in faster page load times, particularly on mobile devices 
+                with slower network speeds.
+            </p>
+    
+            <h3>How to Create and Implement CSS Sprites</h3>
+            <p>
+                To use CSS sprites, we need to follow these basic steps:
+            </p>
+            <ul>
+                <li><strong>Step 1:</strong> Combine multiple images into one image file. This can be done manually or using tools like 
+                    SpriteMe or CSS Sprite Generator.</li>
+                <li><strong>Step 2:</strong> Set the background image of an element in CSS to the sprite file.</li>
+                <li><strong>Step 3:</strong> Use the <code>background-position</code> property to display the appropriate part of the sprite.</li>
+            </ul>
+    
+            <h3>Example: Creating a Sprite</h3>
+            <p>
+                Below is an example of how to create a sprite for three different icons. We'll assume that we have a sprite image 
+                containing the icons for "home," "search," and "settings."
+            </p>
+    
+            <pre>
+                <code>
+    /* CSS */
+    .icon {
+      width: 50px;
+      height: 50px;
+      background-image: url('sprite.png');
+      display: inline-block;
+    }
+    
+    .icon-home {
+      background-position: 0 0; /* Position of the home icon */
+    }
+    
+    .icon-search {
+      background-position: -50px 0; /* Position of the search icon */
+    }
+    
+    .icon-settings {
+      background-position: -100px 0; /* Position of the settings icon */
+    }
+                </code>
+            </pre>
+    
+            <p>
+                In this example, the <code>.icon</code> class sets the width and height of each icon, while the specific icon classes 
+                like <code>.icon-home</code> adjust the background position to display the appropriate part of the sprite.
+            </p>
+    
+            <h3>Best Practices for CSS Sprites</h3>
+            <p>
+                While CSS sprites are an excellent way to improve website performance, it's important to follow these best practices:
+            </p>
+            <ul>
+                <li><strong>Use for small images:</strong> Sprites work best for small, reusable images like icons, buttons, and UI elements.</li>
+                <li><strong>Optimize sprite images:</strong> Minimize the size of the sprite file by compressing images before combining them.</li>
+                <li><strong>Use image maps carefully:</strong> Be cautious of large sprite files as they can become cumbersome and affect performance.</li>
+            </ul>
+    
+            <h3>Visual Example: Icon Sprites</h3>
+            <p>
+                Below is an example of how icons can be implemented using CSS sprites. Hover over the icons to see them in action.
+            </p>
+            <div class="icon icon-home"></div>
+            <div class="icon icon-search"></div>
+            <div class="icon icon-settings"></div>
+    
+        </div>
+    </article>
+
+    
+    </main>
+
+    <section id="video">
+        <h2>Visiting Country Georgia Video </h2>
+        <div id="videoContainerContainer">
+        <div id="videoContainer">
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/ct3szAqObqM?si=yTsRJDd9Wkm677Rt" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div> 
+</div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact us:</h2>
+
+        <form id="contactForm" name="contactForm" method="post" data-netlify="true">
+
+            <fieldset>
+                <legend>Contact Form</legend>
+
+                <div id="formElements">
+
+                <label for="name">Name(required)</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email (reqquired)</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="phone">Phone (optional)</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="phonetype">Phone type (optional)</label>
+                <select id="phonetype" name="phonetype">
+                    <option value="" selected>Select Phone type</option>
+                    <option value="Mobile">mobile</option>
+                    <option value="Work">Work</option>
+                    <option value="Home">Home</option>
+                    
+                </select>
+
+                <label for="message">Massage (optional)</label>
+                <textarea id="message" name="message" rows="8"></textarea>
+
+                <fieldset>
+                    <legend>Would you like a reply?</legend>
+
+                    <ul>
+                        <li>
+                            <input type="radio" id="message-yes"
+                            name="reply">
+                           <label for="message-yes"> Yes a reply would be nice</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="message-no"
+                            name="reply" checked>
+                            <label for="message-no">No, thanks.</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <button type="submit">Send</button>
+
+            </div>
+
+            </fieldset>
+        </form>
+
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2024 Mari Modebadze</p>
+        <p>Visit my GitHub: <a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
+    </footer>
+    
+
+</body>
+
+</html>
