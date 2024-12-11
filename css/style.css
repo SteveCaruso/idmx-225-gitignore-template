@@ -281,6 +281,29 @@ h2 {
     #contact fieldset {
         grid-column: 1 / 3;
     }
+
+    /* Centering and aligning the follow-up options side by side */
+#formElements fieldset ul {
+    display: flex;
+    justify-content: center; /* Centers the options horizontally */
+    align-items: center; /* Aligns the options vertically */
+    gap: 2rem; /* Adds space between the options */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+
+#formElements fieldset ul li {
+    display: flex;
+    align-items: center; /* Aligns text and radio buttons vertically */
+    gap: 0.5rem; /* Adds space between the radio button and label */
+    }
+
+#formElements fieldset legend {
+    text-align: center; /* Centers the legend text */
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    }
 }
 
 @media screen and (min-width: 60em) {
