@@ -16,6 +16,9 @@ This project was developed to practice and showcase web development skills:
 - **CSS**: Styled the page with a cohesive theme, responsive layouts, and dynamic hover effects.
 - **Responsive Design**: Ensured the page is functional and visually appealing across various devices using media queries.
 
+## Logo
+This project features a custom logo (monogram "AB") designed to match the website's theme. The logo represents my personal brand and was created to enhance the professionalism of the webpage. It also appears as a favicon for the site.
+
 ## Color Scheme
 The webpage uses a simple yet effective color scheme with high contrast for readability:
 

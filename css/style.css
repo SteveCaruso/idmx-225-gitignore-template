@@ -22,11 +22,22 @@ header, footer {
     align-items: center;
 }
 
+/* Bio and Hobbies Styling Adjustments */
+#bio p, #hobbies p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
 /* Hero img Section */
 
 #hero img {
-    width: 275px;
-    max-width:100%;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%; /* Circular crop */
+    border: 3px solid #FDE74C; /* Matches site theme */
+    margin: 1rem auto;
+    display: block;
 }
 
 /* Hero and Footer Text Style Section */
@@ -82,6 +93,12 @@ h2 {
 
 #gallery figcaption {
     padding-top: .5rem;
+}
+
+#gallery img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 /* Short Video Section */
