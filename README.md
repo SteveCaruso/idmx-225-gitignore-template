@@ -16,6 +16,14 @@ This project was developed to practice and showcase web development skills:
 - **CSS**: Styled the page with a cohesive theme, responsive layouts, and dynamic hover effects.
 - **Responsive Design**: Ensured the page is functional and visually appealing across various devices using media queries.
 
+## Blog Article: Understanding CSS Animation
+This project includes a detailed blog article about CSS animations, exploring their use cases, implementation, and practical examples. The article demonstrates how to create smooth animations using CSS properties such as `@keyframes`, `animation-duration`, and `animation-timing-function`. It also features a visual example of a bouncing ball animation, which showcases the capability of CSS to create dynamic effects without external libraries.
+
+### Resources Cited
+1. [MDN Web Docs on CSS Animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
+2. [CSS-Tricks Animation Guide](https://css-tricks.com/almanac/properties/a/animation/)
+3. [W3Schools CSS Animation Tutorial](https://www.w3schools.com/css/css3_animations.asp)
+
 ## Logo
 This project features a custom logo (monogram "AB") designed to match the website's theme. The logo represents my personal brand and was created to enhance the professionalism of the webpage. It also appears as a favicon for the site.
 
@@ -39,6 +47,7 @@ Using a contrast checker, the color choices meet WCAG standards with a contrast 
 1. **Font Resources**: [Google Fonts - Playfair Display](https://fonts.google.com/specimen/Playfair+Display) and [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
 2. **Images**:
    - Origami bird logo sourced from personal design.
+   - Picture of myself taken personally.
    - Gallery photos taken personally.
 3. **Code References**: 
    - [MDN Web Docs](https://developer.mozilla.org/en-US/)
