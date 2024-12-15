@@ -1,0 +1,478 @@
+/* Body Section */
+
+body {
+    color:  #FDE74C;
+    background-color: #5B7C99;
+    font-family: "Playfair Display", serif;
+}
+
+/* Header and Footer Text Style Section */
+
+header, footer {
+    text-align: center;
+    font-size: 150%;
+}
+
+/* Bio, Hobbies, About Me, and Favorite Music Text Style Section */
+
+#bio, #hobbies, #about-me, #favorite-music{
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+/* Bio and Hobbies Styling Adjustments */
+#bio p, #hobbies p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Hero img Section */
+
+#hero img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%; /* Circular crop */
+    border: 3px solid #FDE74C; /* Matches site theme */
+    margin: 1rem auto;
+    display: block;
+}
+
+/* Hero and Footer Text Style Section */
+
+#hero, footer{
+    font-family: "Playfair Display", sans-serif;
+    background-color:#FDE74C;
+    color: #5B7C99;
+    font-size: 24px;
+    text-align: center;
+    border: 5px solid #E5E9EC;
+    
+    box-sizing: border-box;
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 100% !important;
+}
+
+/* ul Text Style Section */
+
+ul {
+    list-style-position: inside;
+}
+
+/* h2 Text Style Section */
+
+h2 {
+    text-align: center;
+}
+
+/* Gallery */
+
+#gallery h2 { 
+    border-bottom: 2px solid #E5E9EC;
+    padding-bottom:1rem;
+}
+
+#gallery {
+    border: 2px solid #E5E9EC;
+    margin-bottom:2rem;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#gallery img {
+    max-width:100%;
+}
+
+#gallery figure {
+    text-align: center;
+}
+
+
+#gallery figcaption {
+    padding-top: .5rem;
+}
+
+#gallery img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Short Video Section */
+
+#video {
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#video figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #E5E9EC;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #FDE74C;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+#video iframe {
+    max-width: 100%;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: block;
+    aspect-ratio: 16 / 9; /* Maintains the aspect ratio */
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+#video figcaption {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+
+/* Literature */
+
+#lit h2 {
+    text-align: center;
+    font-size: 2rem; /* Slightly larger font */
+    margin-bottom: 2rem; /* Add space below the title */
+}
+
+#lit {
+    border: 2px solid #E5E9EC; 
+    margin-bottom:2rem;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 2rem;
+}
+
+#lit div {
+    padding: 2rem;
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the section */
+    line-height: 1.8; /* Improve readability */
+    text-align: justify; /* Justify text alignment for a clean layout */
+}
+
+#lit div p {
+    margin-bottom: 1.5rem; /* Add space between paragraphs */
+    padding: 0; /* Remove any extra padding if present */
+}
+
+
+/* Animation Example */
+.animation-example {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #5B7C99; /* Border matches theme */
+    border-radius: 10px;
+    margin: 2rem auto; /* Center and add space above and below */
+    height: 220px; /* Keep height consistent */
+    max-width: 600px; /* Restrict width for a balanced layout */
+}
+
+.bouncing-ball {
+    width: 50px;
+    height: 50px;
+    background-color: #FDE74C; /* Matches accent color */
+    border-radius: 50%;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+/* Keyframes for Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px) scale(1.1);
+    }
+}
+
+
+/* Center Hobbies Section */
+#hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Adjust h2 margin */
+h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Contact Form Section */
+#contact {
+    font-family: "Josefin Sans", sans-serif;
+    padding: 2rem;
+    background-color: #FDE74C;
+    color: #5B7C99; 
+    border: 2px solid #5B7C99;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+#contact fieldset{
+    border: 2px solid #5B7C99;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #E5E9EC; /* Slight contrast */
+}
+
+#contact legend {
+    font-size: 1.5rem;
+    color: #5B7C99;
+    padding: 0 1rem;
+}
+
+#formElements {
+    display: grid;
+    gap: 1rem;
+}
+
+#formElements input, #formElements select, #formElements textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 2px solid #5B7C99;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#formElements ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+#formElements ul li {
+    display: flex;
+    align-items: center;
+}
+
+#formElements ul li input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+#formElements button[type="submit"] {
+    background-color: #5B7C99;
+    color: #FDE74C;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formElements button[type="submit"]:hover {
+    background-color: #3D5A73; /* Slightly darker blue on hover */
+}
+
+/* Contact Screen if screen is max-width 768 pixels */
+@media screen and (max-width: 768px) {
+    #contact {
+        padding: 1rem;
+    }
+
+    #formElements {
+        gap: 0.5rem;
+    }
+
+    #formElements input, #formElements select, #formElements textarea {
+        font-size: 0.9rem;
+    }
+
+    #formElements button[type="submit"] {
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .animation-example {
+        margin-top: 3rem; /* Extra space for small screens */
+    }
+}
+
+/* Contact Screen if screen is min-width 1024 pixels */
+@media screen and (min-width: 1024px) {
+    #contact {
+        max-width: 800px;
+    }
+    
+    #formElements {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    #formElements button[type="submit"] {
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    #contact fieldset {
+        grid-column: 1 / 3;
+    }
+
+    /* Centering and aligning the follow-up options side by side */
+#formElements fieldset ul {
+    display: flex;
+    justify-content: center; /* Centers the options horizontally */
+    align-items: center; /* Aligns the options vertically */
+    gap: 2rem; /* Adds space between the options */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+
+#formElements fieldset ul li {
+    display: flex;
+    align-items: center; /* Aligns text and radio buttons vertically */
+    gap: 0.5rem; /* Adds space between the radio button and label */
+    }
+
+#formElements fieldset legend {
+    text-align: center; /* Centers the legend text */
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    }
+
+    .animation-example {
+        margin-top: 2.5rem; /* Adequate space for larger screens */
+    }
+}
+
+@media screen and (min-width: 60em) {
+    
+    /* Gallery Grid Layout */
+    #gallery figure {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem; /* Optional: adds space between image and caption */
+        
+    }
+
+    #gallery figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    /* Multi-columns for Literature Section */
+    
+    #lit div p {
+        break-inside: avoid;
+    }
+
+    #video iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+
+@media screen and (min-width: 100em) {
+    
+    /* Larger Screen - 3 Column Grid for Gallery */
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        margin-bottom:2rem;
+        gap:0px !important;
+    }
+
+    /* Hide extra horizontal rules */
+    #gallery hr {
+        display: none;
+    }
+
+    /* Make h2 span the full width of the grid */
+    #gallery h2 {
+        grid-column: 1 / -1;
+        text-align: center;
+        border-bottom: 2px solid #E5E9EC;
+        margin-bottom: 0;
+        padding-bottom:1rem;
+    }
+
+    /* Reset figure to display block */
+    #gallery figure {
+        display: block;
+        border-left: 2px solid #E5E9EC;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 2.5rem;
+        padding-right:0rem;
+    }
+    
+    #gallery figure:first-of-type {
+        border-left:none !important;
+    }
+
+    .animation-example {
+        margin-top: 4rem; /* Add ample spacing for the largest screens */
+    }
+}
+
+/* Toggle Button */
+.toggle-button {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color:#FDE74C;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .toggle-button {
+        display: block;
+        align-self: flex-end;
+        position: absolute;
+        top: 44px;
+        right: 10px;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    #lit div {
+        padding: 1rem;
+    }
+    
+    #lit div p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #lit div p {
+        line-height: 1.8;
+        margin-bottom: 1.2rem;
+    }    
+}
