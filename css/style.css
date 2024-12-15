@@ -142,36 +142,61 @@ h2 {
 
 /* Literature */
 
+#lit h2 {
+    text-align: center;
+    font-size: 2rem; /* Slightly larger font */
+    margin-bottom: 2rem; /* Add space below the title */
+}
+
 #lit {
-    border: 2px solid #E5E9EC;
+    border: 2px solid #E5E9EC; 
     margin-bottom:2rem;
     font-family: "Josefin Sans", sans-serif;
+    padding: 2rem;
 }
 
 #lit div {
     padding: 2rem;
-    max-width: 40rem;
-    margin: 0 auto;
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the section */
+    line-height: 1.8; /* Improve readability */
+    text-align: justify; /* Justify text alignment for a clean layout */
 }
 
 #lit div p {
-    padding: 0.3rem 0;
-    clear: both;
+    margin-bottom: 1.5rem; /* Add space between paragraphs */
+    padding: 0; /* Remove any extra padding if present */
 }
 
-/* Dropcaps */
 
-#lit div p:first-letter {
-    color: #E5E9EC;
-    float: left;
-    font-size: 3rem;
-    padding: .5rem;
-    border:3px solid #E5E9EC; 
-    border-top-left-radius: .2rem;
-    border-bottom-left-radius: .2rem;
-    margin-right: .5ex;
-    margin-bottom: .5ex;
-    padding-top: 1ex;
+/* Animation Example */
+.animation-example {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #5B7C99; /* Border matches theme */
+    border-radius: 10px;
+    margin: 2rem auto; /* Center and add space above and below */
+    height: 220px; /* Keep height consistent */
+    max-width: 600px; /* Restrict width for a balanced layout */
+}
+
+.bouncing-ball {
+    width: 50px;
+    height: 50px;
+    background-color: #FDE74C; /* Matches accent color */
+    border-radius: 50%;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+/* Keyframes for Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px) scale(1.1);
+    }
 }
 
 
@@ -259,7 +284,7 @@ h2 {
     background-color: #3D5A73; /* Slightly darker blue on hover */
 }
 
-/* Contact Screen if screen is max-wdith 768 pixels */
+/* Contact Screen if screen is max-width 768 pixels */
 @media screen and (max-width: 768px) {
     #contact {
         padding: 1rem;
@@ -276,6 +301,10 @@ h2 {
     #formElements button[type="submit"] {
         font-size: 1rem;
         padding: 0.8rem 1rem;
+    }
+
+    .animation-example {
+        margin-top: 3rem; /* Extra space for small screens */
     }
 }
 
@@ -321,6 +350,10 @@ h2 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     }
+
+    .animation-example {
+        margin-top: 2.5rem; /* Adequate space for larger screens */
+    }
 }
 
 @media screen and (min-width: 60em) {
@@ -342,9 +375,9 @@ h2 {
     }
 
     /* Multi-columns for Literature Section */
-    #lit div {
-        max-width: 100%;
-        columns: 40rem;
+    
+    #lit div p {
+        break-inside: avoid;
     }
 
     #video iframe {
@@ -352,21 +385,6 @@ h2 {
         height: auto;
     }
 
-}
-
-
-/* Dropcaps: Apply to the first child */
-#lit div p:first-child:first-letter {
-    color: #E5E9EC;
-    float: left;
-    font-size: 3rem;
-    padding: .5rem;
-    border: 3px solid #E5E9EC;
-    border-top-left-radius: .2rem;
-    border-bottom-left-radius: .2rem;
-    margin-right: .5ex;
-    margin-bottom: .5ex;
-    padding-top: 1ex;
 }
 
 
@@ -408,6 +426,10 @@ h2 {
     #gallery figure:first-of-type {
         border-left:none !important;
     }
+
+    .animation-example {
+        margin-top: 4rem; /* Add ample spacing for the largest screens */
+    }
 }
 
 /* Toggle Button */
@@ -439,4 +461,18 @@ h2 {
         display: flex;
     }
 
+    #lit div {
+        padding: 1rem;
+    }
+    
+    #lit div p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #lit div p {
+        line-height: 1.8;
+        margin-bottom: 1.2rem;
+    }    
 }
