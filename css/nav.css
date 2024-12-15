@@ -1,0 +1,197 @@
+/* make scrolling smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+/*
+get rid of padding & sizing on body so
+header is at top
+*/
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* add some padding back to rest of page */
+main {
+    padding: 2vw;
+}
+
+
+/* navbar */
+.navbar {
+    background-color: #1C2E4A;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 10vw;
+    width: 10vw;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.logo h1 {
+    font-size: 1em;
+    margin-top: 1rem;
+    margin-left: .5rem;
+    
+}
+
+/* navigation list */
+
+.navbar-links li {
+    list-style: none;
+    display: none;
+    padding: 0.25 0;
+    margin-right: auto;
+}
+
+.nav-icon {
+    position: absolute;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    right: 0;
+    margin-top: .5rem;
+}
+
+svg {
+    width: 1.5rem;
+    fill: white;
+}
+
+.close {
+    display: none;
+}
+
+.menu {
+    margin-top: 0.2rem;
+}
+
+
+.nav-checkbox {
+    display: none;
+}
+
+
+
+#nav-checkbox:checked ~ .navbar-links li {
+    display: block;
+
+}
+
+#nav-checkbox:checked ~ label.nav-icon .close {
+    display: block;
+}
+
+#nav-checkbox:checked ~ label.nav-icon .menu {
+    display: none;
+}
+
+
+/*
+style all a tags in header
+and then on hover
+*/
+.navbar-links a {
+    color: white;
+    background-color: #1C2E4A;
+    font-size: 1.2rem;
+    padding: .5rem .85rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar-links a:hover, .navbar-links a:focus {
+    filter: invert(1);
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+/*
+media query for non-mobile nav bar
+min-width set to width of nav elements
+such that no text wraps
+*/
+@media screen and (min-width: 60rem) {
+
+    .nav-icon {
+        display: none;
+    }
+
+
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        margin-top: .8rem;
+        margin-right: 1rem;
+        
+        /* flex-direction: row;
+        justify-content: space-between; */
+    } 
+
+    .navbar-links li {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-links a {
+        font-size: 1.2rem;
+    }
+
+    .logo h1 {
+        font-size: 1.2em;
+    }
+
+    .logo img {
+        height: 6vw;
+        width: 6vw;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .logo h1 {
+        font-size: 1.5em;
+        margin-top: 0;
+        margin-left: .5rem;
+        
+    }
+
+    
+
+}
+
